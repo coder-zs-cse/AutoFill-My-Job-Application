@@ -1,0 +1,21 @@
+---
+description: How to turn a Google Stitch export into a React Native screen
+globs: design/stitch/**,apps/mobile/src/features/**/ui/**
+alwaysApply: false
+---
+
+The export (`design/stitch/<ID>/code.html`, `screen.png`) is a picture with measurements. Use it like a designer's
+spec, not like source code.
+
+1. Start from `design/stitch/<ID>/notes.md`: it names the owner feature, the file to create and the route.
+2. Decompose the screenshot into existing primitives/patterns from `@design-system`
+   (ClayCard, ClayButton, ClayInput, MethodTag, Text, …). List the decomposition before writing code.
+3. Missing primitive? Propose it (name + props) and add it to `src/design-system/` first. Never inline a
+   one-off clay style in a feature.
+4. Never copy CSS, Tailwind classes, hex colors, px values or SVG from the HTML. Snap spacing to the 4px grid
+   and map every color to a token.
+5. Sample text in the export is fake. Bind real data from the feature's application hooks.
+6. States: `<ID>b`, `<ID>c`… folders are the same component in another state. Match each.
+7. Sheets/dialogs are components owned by the host screen, not navigation routes.
+8. Autofill surfaces (S30–S33) are Kotlin, not RN: see `.claude/autofill-service.md`.
+9. After building, fill the "Translation notes" in notes.md (primitives used, deviations and why).

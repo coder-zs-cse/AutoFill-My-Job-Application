@@ -1,0 +1,13 @@
+---
+description: FastAPI backend layering and contracts
+globs: apps/api/**/*.py
+alwaysApply: false
+---
+
+- Layers: api/routes (HTTP only) → services (rules) → repositories (SQL) → models. Schemas = Pydantic I/O.
+- Endpoints and payloads must match `.claude/api-contract.md`; tables match `.claude/data-model.md`.
+- Every write to questions/aliases/preferences/settings bumps `users.kb_version` in the same transaction.
+- `app/matching` reads `packages/contracts/matching/rules.json`; `tests/test_matching` runs `vectors.json`.
+- LLM access only through the `LlmProvider` port; model name from settings. Keep the hallucination guard
+  in `app/llm/contract.py`.
+- Every AI call and fill event writes a `usage_events` row.

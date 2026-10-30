@@ -1,0 +1,14 @@
+---
+description: Project map and non-negotiable rules for Fillmate
+alwaysApply: true
+---
+
+Source of truth for agents is `AGENTS.md` at the repo root and the specs in `.claude/`. Read `AGENTS.md`
+and `KARPATHY.md` before making changes; read the spec named in AGENTS.md's "Read before…" table for the task.
+
+Non-negotiables:
+- Respect layer/feature boundaries (ui → application → domain ← data; features via `@features/<name>` only).
+- Stitch exports in `design/stitch/` are visual references, never code to port.
+- Matching changes start with a vector in `packages/contracts/matching/vectors.json`.
+- Ask before adding dependencies, navigators, global stores, or bridge methods.
+- Finish with: `npm run typecheck && npm run lint && npm test` in `apps/mobile`.

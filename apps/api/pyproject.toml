@@ -1,0 +1,26 @@
+[project]
+name = "fillmate-api"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic-settings",
+  "sqlalchemy[asyncio]",
+  "asyncpg",
+  "alembic",
+  "pgvector",
+  "redis",
+  "openai",
+  "python-multipart",
+  "pypdf",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio", "httpx", "ruff"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

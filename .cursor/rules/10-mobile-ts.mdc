@@ -1,0 +1,15 @@
+---
+description: React Native TypeScript conventions for features, core and design-system
+globs: apps/mobile/src/**/*.ts,apps/mobile/src/**/*.tsx
+alwaysApply: false
+---
+
+- The `kb` feature is the reference implementation. Copy its shape: domain/ (types, port, pure rules),
+  data/ (dto, mappers, ApiRepository), application/ (context provider, use-case hooks + query keys), ui/, index.ts.
+- domain/ imports nothing from React, React Native, TanStack, @core or @design-system.
+- Screens never call fetch, repositories, or `fillmateNative` directly; they call application hooks.
+- Every KB-affecting mutation ends by invalidating queries AND `fillmateNative.kb.sync()`.
+- Concrete classes are wired only in `src/app/providers/AppProviders.tsx`.
+- Render text with `Text` from `@design-system` and a `variant`; colors/spacing from tokens only.
+- Data screens implement loading, error (retry), empty, populated.
+- Specs: `.claude/conventions.md`, `.claude/lld-guide.md`.

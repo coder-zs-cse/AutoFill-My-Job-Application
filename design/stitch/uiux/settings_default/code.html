@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#F3F0FA;}body{overscroll-behavior:none;font-family:'Nunito Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed": "#e4dfff", "primary-container": "#7160e6", "on-secondary-fixed-variant": "#3f2aba", "primary": "#5845cb", "tertiary": "#845000", "background": "#fdf7ff", "surface-container-low": "#f8f1ff", "surface-container": "#f2ebff", "outline-variant": "#c8c4d6", "error-container": "#ffdad6", "tag-gap-text": "#7A5300", "icon-bg-sky": "#E2EEFF", "on-secondary-container": "#fffbff", "icon-bg-peach": "#FFE8DC", "on-surface-variant": "#474554", "on-primary-container": "#fffbff", "on-tertiary-fixed-variant": "#673d00", "text-secondary-dark": "#B3ACCB", "inverse-on-surface": "#f5eeff", "inverse-surface": "#322c49", "outline": "#787585", "tertiary-fixed": "#ffddba", "on-tertiary": "#ffffff", "surface-container-high": "#ede4ff", "tag-ai-text": "#5B3BB8", "icon-bg-mint": "#DDF7EC", "tertiary-container": "#a66600", "surface-container-lowest": "#ffffff", "text-secondary-light": "#6B6485", "destructive": "#B3261E", "text-primary-light": "#2A2440", "canvas-dark": "#1B1828", "inverse-primary": "#c7bfff", "tertiary-fixed-dim": "#ffb865", "tag-alias-text": "#0F6A48", "primary-fixed-dim": "#c7bfff", "canvas-light": "#F3F0FA", "tag-error-bg": "#FFD9D4", "tag-skipped-text": "#5E5874", "on-secondary-fixed": "#160066", "tag-semantic-text": "#1C4F94", "secondary-container": "#6e60ea", "on-error-container": "#93000a", "on-background": "#1d1733", "on-tertiary-container": "#fffbff", "on-secondary": "#ffffff", "secondary-fixed": "#e4dfff", "on-error": "#ffffff", "surface-variant": "#e7deff", "surface-dim": "#dfd5fa", "on-surface": "#1d1733", "secondary-fixed-dim": "#c6bfff", "on-tertiary-fixed": "#2b1700", "text-placeholder": "#9A93B3", "on-primary-fixed-variant": "#422bb5", "surface-tint": "#5a48ce", "tag-alias-bg": "#C9F2E1", "error": "#ba1a1a", "text-primary-dark": "#F1EEFA", "surface": "#fdf7ff", "surface-bright": "#fdf7ff", "on-primary": "#ffffff", "tag-error-text": "#9A2A1E", "secondary": "#5544d0", "icon-bg-lavender": "#E9E4FF", "on-primary-fixed": "#170065", "tag-semantic-bg": "#D4E6FF", "tag-gap-bg": "#FFEDB8", "surface-container-highest": "#e7deff", "tag-skipped-bg": "#ECEAF2" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter": "12px", "space-md": "12px", "space-xs": "4px", "space-xl": "18px", "space-sm": "8px", "margin": "20px", "space-lg": "16px" }, fontFamily: { "title-md": ["Nunito Sans"], "display-lg": ["Nunito Sans"], "body-md": ["Nunito Sans"], "label-md": ["Nunito Sans"], "caption-sm": ["Nunito Sans"] }, fontSize: { "title-md": ["20px", { lineHeight: "26px", fontWeight: "700" }], "display-lg": ["28px", { lineHeight: "34px", fontWeight: "800" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "label-md": ["13px", { lineHeight: "18px", fontWeight: "600" }], "caption-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-canvas-light text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-canvas-light/80 backdrop-blur-xl"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><button aria-label="Go back" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface bg-surface-container-lowest/60 shadow-[4px_4px_10px_rgba(110,90,180,0.10),-4px_-4px_10px_rgba(255,255,255,0.85)] active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-text-primary-light">Component Showcase</h1></div><div class="flex items-center gap-space-sm"><button aria-label="More Options" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface bg-surface-container-lowest/60 shadow-[4px_4px_10px_rgba(110,90,180,0.10),-4px_-4px_10px_rgba(255,255,255,0.85)] active:scale-95 transition-all"><span class="material-symbols-outlined text-[20px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[2px_2px_6px_rgba(110,90,180,0.25)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe px-margin bg-canvas-light"><div class="flex flex-col w-full pb-8">
+<!-- Dynamic Micro-interactions Style -->
+<style>
+    .clay-card {
+      background: linear-gradient(180deg, #FFFFFF 0%, #FAF8FF 100%);
+      box-shadow: 12px 12px 24px rgba(110, 90, 180, 0.14), -8px -8px 18px rgba(255, 255, 255, 0.95), inset 4px 4px 8px rgba(255, 255, 255, 0.85), inset -4px -4px 8px rgba(110, 90, 180, 0.08);
+      border-radius: 28px;
+    }
+    .clay-pill-btn {
+      background: linear-gradient(180deg, #FFFFFF 0%, #FAF8FF 100%);
+      box-shadow: 6px 6px 14px rgba(110, 90, 180, 0.12), -4px -4px 10px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.9), inset -2px -2px 4px rgba(110, 90, 180, 0.06);
+    }
+    .clay-pod {
+      box-shadow: 4px 4px 10px rgba(110, 90, 180, 0.12), -3px -3px 8px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.7);
+    }
+    .clay-toggle-track-on {
+      background: #7160e6;
+      box-shadow: inset 3px 3px 6px rgba(45, 25, 110, 0.35), inset -2px -2px 4px rgba(255, 255, 255, 0.25);
+    }
+    .clay-toggle-track-off {
+      background: #dfd5fa;
+      box-shadow: inset 3px 3px 6px rgba(110, 90, 180, 0.2), inset -2px -2px 4px rgba(255, 255, 255, 0.6);
+    }
+    .clay-toggle-thumb {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F5F0FF 100%);
+      box-shadow: 2px 3px 8px rgba(35, 20, 80, 0.3), inset 1px 1px 2px rgba(255, 255, 255, 0.95);
+    }
+    .clay-segment-active {
+      background: #ede4ff;
+      box-shadow: 4px 4px 10px rgba(110, 90, 180, 0.15), -3px -3px 8px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.8);
+    }
+  </style>
+<!-- Content Container -->
+<div class="flex flex-col w-full max-w-[480px] mx-auto gap-space-lg">
+<!-- Section 1: Autofill -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-text-secondary-light tracking-wider uppercase px-space-xs font-semibold">Autofill</span>
+<div class="clay-card p-[18px] flex flex-col gap-space-lg">
+<!-- Row 1: Autofill Status -->
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-title-md text-title-md text-text-primary-light">Autofill service</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light mt-0.5">Automates job application forms</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-tag-alias-bg text-tag-alias-text shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md font-bold">Enabled</span>
+</div>
+</div>
+<div class="w-full h-px bg-surface-container"></div>
+<!-- Row 2: Match Tags Toggle -->
+<div class="flex items-center justify-between gap-space-md cursor-pointer" onclick="toggleSwitch('toggle-match-tags')">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-title-md text-title-md text-text-primary-light">Show match tags</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light mt-0.5">e.g. Alias: current ctc</span>
+</div>
+<div class="w-14 h-8 rounded-full clay-toggle-track-on p-1 transition-all flex items-center justify-end shrink-0 cursor-pointer active:scale-95" id="toggle-match-tags">
+<div class="w-6 h-6 rounded-full clay-toggle-thumb transform transition-transform"></div>
+</div>
+</div>
+<div class="w-full h-px bg-surface-container"></div>
+<!-- Row 3: Save for Later Suggestion Toggle -->
+<div class="flex items-center justify-between gap-space-md cursor-pointer" onclick="toggleSwitch('toggle-save-later')">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-title-md text-title-md text-text-primary-light">Save for later prompt</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light mt-0.5">Quick action to defer unknown fields</span>
+</div>
+<div class="w-14 h-8 rounded-full clay-toggle-track-on p-1 transition-all flex items-center justify-end shrink-0 cursor-pointer active:scale-95" id="toggle-save-later">
+<div class="w-6 h-6 rounded-full clay-toggle-thumb transform transition-transform"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Sync -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-text-secondary-light tracking-wider uppercase px-space-xs font-semibold">Sync</span>
+<div class="clay-card p-[18px] flex items-center justify-between gap-space-md">
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-text-primary-light">Answer bank v214</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light mt-0.5" id="sync-status">Synced 2 minutes ago</span>
+</div>
+<button class="clay-pill-btn flex items-center gap-1.5 px-4 h-11 rounded-full text-primary shrink-0 active:scale-95 transition-all" id="sync-btn" onclick="triggerSync()">
+<span class="material-symbols-outlined text-[18px] transition-transform duration-700" id="sync-icon">sync</span>
+<span class="font-label-md text-label-md font-bold">Sync now</span>
+</button>
+</div>
+</div>
+<!-- Section 3: Appearance -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-text-secondary-light tracking-wider uppercase px-space-xs font-semibold">Appearance</span>
+<div class="clay-card p-[18px] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-text-primary-light">Theme preference</span>
+<span class="material-symbols-outlined text-text-secondary-light text-[20px]">palette</span>
+</div>
+<!-- Tactile Segmented Control -->
+<div class="p-1 rounded-2xl bg-canvas-light flex items-center gap-1 shadow-[inset_3px_3px_6px_rgba(110,90,180,0.12),inset_-3px_-3px_6px_rgba(255,255,255,0.8)]">
+<button class="theme-tab flex-1 py-2.5 rounded-xl font-label-md text-label-md text-text-secondary-light hover:text-text-primary-light transition-all flex items-center justify-center gap-1.5" onclick="selectTheme(this, 'Light')">
+<span class="material-symbols-outlined text-[16px]">light_mode</span>
+<span>Light</span>
+</button>
+<button class="theme-tab flex-1 py-2.5 rounded-xl font-label-md text-label-md text-text-secondary-light hover:text-text-primary-light transition-all flex items-center justify-center gap-1.5" onclick="selectTheme(this, 'Dark')">
+<span class="material-symbols-outlined text-[16px]">dark_mode</span>
+<span>Dark</span>
+</button>
+<button class="theme-tab clay-segment-active flex-1 py-2.5 rounded-xl font-label-md text-label-md text-primary font-bold transition-all flex items-center justify-center gap-1.5" onclick="selectTheme(this, 'System')">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">devices</span>
+<span>System</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section 4: Data -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-text-secondary-light tracking-wider uppercase px-space-xs font-semibold">Data</span>
+<div class="clay-card p-[18px] flex flex-col">
+<button class="w-full flex items-center justify-between text-left active:scale-[0.99] transition-all group" onclick="simulateExport()">
+<div class="flex items-center gap-space-md min-w-0 pr-2">
+<div class="w-10 h-10 rounded-full bg-icon-bg-sky text-semantic-text clay-pod flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px] text-tag-semantic-text">file_download</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-text-primary-light">Export my data</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light truncate">JSON file of questions, aliases, stories</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full flex items-center justify-center text-text-secondary-light group-hover:text-primary transition-colors shrink-0">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Section 5: Account -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-text-secondary-light tracking-wider uppercase px-space-xs font-semibold">Account</span>
+<div class="clay-card p-[18px] flex flex-col gap-space-md">
+<!-- Row 1: Log Out -->
+<button class="w-full flex items-center justify-between text-left active:scale-[0.99] transition-all group">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-full bg-icon-bg-lavender text-primary clay-pod flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+</div>
+<span class="font-title-md text-title-md text-text-primary-light">Log out</span>
+</div>
+<div class="w-8 h-8 rounded-full flex items-center justify-center text-text-secondary-light group-hover:text-primary transition-colors shrink-0">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</div>
+</button>
+<div class="w-full h-px bg-surface-container"></div>
+<!-- Row 2: Delete Account -->
+<button class="w-full flex items-center justify-between text-left active:scale-[0.99] transition-all group">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-full bg-tag-error-bg text-destructive clay-pod flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">delete_forever</span>
+</div>
+<span class="font-title-md text-title-md text-destructive">Delete account</span>
+</div>
+<div class="w-8 h-8 rounded-full flex items-center justify-center text-destructive/60 group-hover:text-destructive transition-colors shrink-0">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</div>
+</button>
+</div>
+</div>
+<!-- App Version Caption Footer -->
+<div class="flex flex-col items-center justify-center pt-2 pb-6">
+<div class="flex items-center gap-1.5 text-text-secondary-light font-caption-sm text-caption-sm">
+<span class="w-2 h-2 rounded-full bg-tag-alias-text"></span>
+<span>Fillmate Job Copilot v2.4.0</span>
+</div>
+<span class="font-caption-sm text-caption-sm text-text-placeholder mt-0.5">Encrypted local cache active</span>
+</div>
+</div>
+</div>
+<script>
+  function toggleSwitch(id) {
+    const el = document.getElementById(id);
+    const isOn = el.classList.contains('clay-toggle-track-on');
+    if (isOn) {
+      el.classList.remove('clay-toggle-track-on', 'justify-end');
+      el.classList.add('clay-toggle-track-off', 'justify-start');
+    } else {
+      el.classList.remove('clay-toggle-track-off', 'justify-start');
+      el.classList.add('clay-toggle-track-on', 'justify-end');
+    }
+  }
+
+  function triggerSync() {
+    const icon = document.getElementById('sync-icon');
+    const status = document.getElementById('sync-status');
+    icon.classList.add('rotate-180');
+    status.textContent = 'Syncing cloud answers...';
+    setTimeout(() => {
+      icon.classList.remove('rotate-180');
+      status.textContent = 'Synced just now';
+    }, 900);
+  }
+
+  function selectTheme(btn, theme) {
+    document.querySelectorAll('.theme-tab').forEach(b => {
+      b.classList.remove('clay-segment-active', 'text-primary', 'font-bold');
+      b.classList.add('text-text-secondary-light');
+    });
+    btn.classList.add('clay-segment-active', 'text-primary', 'font-bold');
+    btn.classList.remove('text-text-secondary-light');
+  }
+
+  function simulateExport() {
+    const origText = 'Export my data';
+    const titleEl = event.currentTarget.querySelector('.font-title-md');
+    if (titleEl) {
+      titleEl.textContent = 'Preparing export...';
+      setTimeout(() => {
+        titleEl.textContent = 'Export generated! (fillmate_vault.json)';
+        setTimeout(() => {
+          titleEl.textContent = origText;
+        }, 2200);
+      }, 700);
+    }
+  }
+</script></main></body></html>

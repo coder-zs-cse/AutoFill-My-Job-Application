@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-variant": "#e7deff", "icon-bg-peach": "#FFE8DC", "tag-gap-bg": "#FFEDB8", "inverse-primary": "#c7bfff", "surface-dim": "#dfd5fa", "icon-bg-mint": "#DDF7EC", "text-primary-dark": "#F1EEFA", "surface-container-lowest": "#ffffff", "surface-container-high": "#ede4ff", "surface-container": "#f2ebff", "on-tertiary-fixed": "#2b1700", "tertiary-container": "#a66600", "error": "#ba1a1a", "text-secondary-light": "#6B6485", "on-tertiary-container": "#fffbff", "surface-container-highest": "#e7deff", "tag-gap-text": "#7A5300", "on-background": "#1d1733", "on-tertiary-fixed-variant": "#673d00", "tag-error-text": "#9A2A1E", "canvas-dark": "#1B1828", "secondary-fixed": "#e4dfff", "error-container": "#ffdad6", "secondary-fixed-dim": "#c6bfff", "tag-skipped-text": "#5E5874", "primary": "#5845cb", "on-error-container": "#93000a", "on-surface-variant": "#474554", "destructive": "#B3261E", "on-primary-container": "#fffbff", "on-primary-fixed": "#170065", "text-primary-light": "#2A2440", "on-secondary": "#ffffff", "tertiary-fixed": "#ffddba", "on-error": "#ffffff", "primary-fixed": "#e4dfff", "canvas-light": "#F3F0FA", "tag-skipped-bg": "#ECEAF2", "surface-tint": "#5a48ce", "surface-container-low": "#f8f1ff", "icon-bg-lavender": "#E9E4FF", "text-placeholder": "#9A93B3", "on-primary": "#ffffff", "inverse-on-surface": "#f5eeff", "icon-bg-sky": "#E2EEFF", "tag-ai-text": "#5B3BB8", "tag-semantic-bg": "#D4E6FF", "on-surface": "#1d1733", "on-secondary-container": "#fffbff", "surface-bright": "#fdf7ff", "outline-variant": "#c8c4d6", "tertiary": "#845000", "outline": "#787585", "surface": "#fdf7ff", "secondary": "#5544d0", "text-secondary-dark": "#B3ACCB", "primary-container": "#7160e6", "on-secondary-fixed-variant": "#3f2aba", "background": "#fdf7ff", "tag-alias-bg": "#C9F2E1", "tag-error-bg": "#FFD9D4", "tertiary-fixed-dim": "#ffb865", "on-secondary-fixed": "#160066", "tag-alias-text": "#0F6A48", "on-primary-fixed-variant": "#422bb5", "secondary-container": "#6e60ea", "inverse-surface": "#322c49", "tag-semantic-text": "#1C4F94", "on-tertiary": "#ffffff", "primary-fixed-dim": "#c7bfff" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter": "12px", "space-sm": "8px", "space-md": "12px", "space-xl": "18px", "margin": "20px", "space-lg": "16px", "space-xs": "4px" }, fontFamily: { "label-md": ["Nunito Sans"], "title-md": ["Nunito Sans"], "display-lg": ["Nunito Sans"], "caption-sm": ["Nunito Sans"], "body-md": ["Nunito Sans"] }, fontSize: { "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "600" }], "title-md": ["20px", { "lineHeight": "26px", "fontWeight": "700" }], "display-lg": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "caption-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script><style>@layer base { html, body { width: 100%; min-height: 100%; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col justify-start items-stretch"><main class="flex-1 flex flex-col relative w-full bg-surface pt-safe pb-safe"><div class="flex flex-col w-full select-none" style="background-color: #F3F0FA;">
+<!-- Mockup Outer Container: Centered on screen, Android Mobile 412px proportion -->
+<div class="w-full max-w-[428px] mx-auto flex flex-col overflow-hidden shadow-2xl relative" style="background-color: #F3F0FA;">
+<!-- 1. Android Status Bar -->
+<div class="w-full flex items-center justify-between px-6 pt-3 pb-2 text-on-surface">
+<div class="flex items-center space-x-1">
+<span class="font-label-md text-label-md font-bold tracking-tight text-text-primary-light">9:41</span>
+</div>
+<div class="flex items-center space-x-2 text-text-primary-light">
+<span class="material-symbols-outlined text-[17px]">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[17px]">wifi</span>
+<span class="material-symbols-outlined text-[19px]">battery_full</span>
+</div>
+</div>
+<!-- 2. Chrome Top App Bar & Omnibox -->
+<div class="w-full px-3 py-2 flex items-center gap-2 bg-surface-container-lowest shadow-sm z-20">
+<!-- Home Icon Button -->
+<button aria-label="Home" class="w-9 h-9 flex items-center justify-center rounded-full text-text-secondary-light active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[21px]">home</span>
+</button>
+<!-- Omnibox Pill -->
+<div class="flex-1 h-10 px-3 rounded-full flex items-center gap-2" style="background-color: #ECEAF4;">
+<span class="material-symbols-outlined text-text-secondary-light text-[17px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+<div class="flex items-center text-label-md font-label-md truncate">
+<span class="text-text-primary-light font-medium">boards.greenhouse.io</span>
+<span class="text-text-secondary-light">/postman</span>
+</div>
+</div>
+<!-- Tab Counter Badge -->
+<div class="w-8 h-8 rounded-lg flex items-center justify-center text-text-primary-light font-label-md text-[13px] font-bold" style="background-color: #ECEAF4;">
+        4
+      </div>
+<!-- 3-Dot Menu -->
+<button aria-label="More options" class="w-8 h-8 flex items-center justify-center text-text-secondary-light rounded-full active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[22px]">more_vert</span>
+</button>
+</div>
+<!-- 3. Web Page Content (Postman on Greenhouse) -->
+<div class="w-full px-5 pt-4 pb-2 overflow-y-auto flex flex-col space-y-3">
+<!-- Company & Job Card (Clay Surface) -->
+<div class="p-4 rounded-lg flex flex-col space-y-2.5 transition-all" style="background: linear-gradient(180deg, #FFFFFF 0%, #FAF8FF 100%);
+                  box-shadow: 8px 8px 18px rgba(110, 90, 180, 0.12), -6px -6px 14px rgba(255, 255, 255, 0.85), inset 3px 3px 6px rgba(255, 255, 255, 0.7), inset -3px -3px 6px rgba(110, 90, 180, 0.06);">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<!-- Postman Logo Clay Disc -->
+<div class="w-10 h-10 rounded-full flex items-center justify-center bg-icon-bg-peach shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[22px]" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-[16px] leading-tight font-bold text-text-primary-light">Postman</span>
+<span class="material-symbols-outlined text-primary text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light">via Greenhouse ATS</span>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full text-tag-alias-text bg-tag-alias-bg font-label-md text-[11px] font-bold">
+            Verified Board
+          </span>
+</div>
+<div>
+<h2 class="font-title-md text-[17px] font-bold text-text-primary-light leading-snug">Senior Software Engineer, Platform API</h2>
+<div class="flex items-center gap-1 text-text-secondary-light font-label-md text-[12px] mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Bengaluru, India • Full-time • Tech &amp; Eng</span>
+</div>
+</div>
+</div>
+<!-- Application Form Section Header -->
+<div class="pt-1">
+<h3 class="font-title-md text-[16px] font-bold text-text-primary-light">Submit your application</h3>
+<p class="font-caption-sm text-caption-sm text-text-secondary-light">Need-to-know details for your candidacy</p>
+</div>
+<!-- Form Inputs Group -->
+<div class="flex flex-col space-y-2.5">
+<!-- Pre-filled Field 1: Full Name -->
+<div class="flex flex-col">
+<label class="font-label-md text-[12px] font-semibold text-text-secondary-light mb-1">Full Name *</label>
+<div class="h-11 px-3.5 rounded-2xl flex items-center justify-between" style="background-color: #EFEAF7; box-shadow: inset 2px 2px 5px rgba(110, 90, 180, 0.12), inset -2px -2px 5px rgba(255, 255, 255, 0.8);">
+<span class="font-body-md text-[14px] text-text-primary-light font-medium">Aarav Mehta</span>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Pre-filled Field 2: Email -->
+<div class="flex flex-col">
+<label class="font-label-md text-[12px] font-semibold text-text-secondary-light mb-1">Email *</label>
+<div class="h-11 px-3.5 rounded-2xl flex items-center justify-between" style="background-color: #EFEAF7; box-shadow: inset 2px 2px 5px rgba(110, 90, 180, 0.12), inset -2px -2px 5px rgba(255, 255, 255, 0.8);">
+<span class="font-body-md text-[14px] text-text-primary-light font-medium truncate">aarav.m@example.com</span>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Pre-filled Field 3: Current Company -->
+<div class="flex flex-col">
+<label class="font-label-md text-[12px] font-semibold text-text-secondary-light mb-1">Current Company</label>
+<div class="h-11 px-3.5 rounded-2xl flex items-center justify-between" style="background-color: #EFEAF7; box-shadow: inset 2px 2px 5px rgba(110, 90, 180, 0.12), inset -2px -2px 5px rgba(255, 255, 255, 0.8);">
+<span class="font-body-md text-[14px] text-text-primary-light font-medium">Razorpay</span>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- 3. FOCUSED Web Form Field: Expected CTC -->
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-md text-[12px] font-bold text-primary">Expected CTC (in INR) *</label>
+<!-- Autofill Active Provider Hint Tag -->
+<div class="flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-icon-bg-lavender">
+<span class="material-symbols-outlined text-primary text-[12px]" style="font-variation-settings: 'FILL' 1;">touch_app</span>
+<span class="font-caption-sm text-[10px] font-bold text-primary uppercase tracking-wider">Fillmate Ready</span>
+</div>
+</div>
+<!-- Recessed Inset Well with Active Primary Glow & Blinking Cursor -->
+<div class="h-12 px-3.5 rounded-2xl flex items-center justify-between relative transition-all" style="background-color: #EDE8F8;
+                      box-shadow: 0 0 0 2px #7160e6, inset 2px 2px 6px rgba(88, 69, 203, 0.22), inset -2px -2px 6px rgba(255, 255, 255, 0.9);">
+<div class="flex items-center gap-0.5">
+<!-- Blinking Cursor -->
+<span class="inline-block w-[2px] h-5 bg-primary animate-pulse rounded-full"></span>
+<span class="font-body-md text-[14px] text-text-secondary-light font-normal tracking-wide" id="targetInputText">
+                e.g. 26,00,000
+              </span>
+</div>
+<!-- Inset Provider Badge Indicator -->
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px] animate-bounce">magic_button</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Android Soft Keyboard with INLINE AUTOFILL SUGGESTION STRIP -->
+<div class="w-full flex flex-col shadow-inner z-30" style="background-color: #DDE0E9;">
+<!-- CRITICAL REQUIREMENT: Android Keyboard Inline Suggestion Strip (IME Strip) -->
+<div class="w-full h-12 px-2.5 flex items-center justify-between gap-1.5" style="background-color: #E8EBF2; border-bottom: 1px solid rgba(0,0,0,0.06);">
+<div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-1 py-1">
+<!-- Pill 1: Primary Value ('26 LPA' with sky dot + Fillmate indicator) -->
+<button class="h-9 px-3 rounded-full flex items-center gap-1.5 bg-surface-container-lowest text-text-primary-light active:scale-95 transition-all shadow-sm shrink-0" id="fillPrimaryBtn" style="box-shadow: 0 1px 3px rgba(0,0,0,0.12);">
+<span class="w-2 h-2 rounded-full bg-tag-semantic-text"></span>
+<span class="material-symbols-outlined text-primary text-[15px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-md text-[13px] font-bold tracking-tight">26 LPA</span>
+</button>
+<!-- Pill 2: AI Inference ('AI' with sparkle) -->
+<button class="h-9 px-3 rounded-full flex items-center gap-1.5 bg-surface-container-lowest text-tag-ai-text active:scale-95 transition-all shadow-sm shrink-0" id="fillAIBtn" style="box-shadow: 0 1px 3px rgba(0,0,0,0.12);">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-md text-[13px] font-bold">₹28,50,000 (Market AI)</span>
+</button>
+<!-- Pill 3: Save for Later / Skip -->
+<button class="h-9 px-2.5 rounded-full flex items-center gap-1 bg-surface-container-lowest text-tag-skipped-text active:scale-95 transition-all shadow-sm shrink-0" id="fillLaterBtn" style="box-shadow: 0 1px 3px rgba(0,0,0,0.12);">
+<span class="material-symbols-outlined text-[15px]">bookmark_border</span>
+<span class="font-label-md text-[12px] font-semibold">Later</span>
+</button>
+</div>
+<!-- Right edge: IME Overflow / Voice Mic -->
+<div class="flex items-center pl-1 text-text-secondary-light">
+<button aria-label="Voice input" class="w-7 h-7 flex items-center justify-center rounded-full active:bg-black/5">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</button>
+</div>
+</div>
+<!-- Android QWERTY Keyboard Keys Area -->
+<div class="w-full p-1.5 flex flex-col gap-2">
+<!-- Row 1: Q W E R T Y U I O P (with numbers superscript) -->
+<div class="flex justify-between gap-1 w-full">
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex flex-col items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="text-[9px] text-text-secondary-light -mb-1">1</span>
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">q</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex flex-col items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="text-[9px] text-text-secondary-light -mb-1">2</span>
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">w</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex flex-col items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="text-[9px] text-text-secondary-light -mb-1">3</span>
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">e</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex flex-col items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="text-[9px] text-text-secondary-light -mb-1">4</span>
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">r</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex flex-col items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="text-[9px] text-text-secondary-light -mb-1">5</span>
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">t</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex flex-col items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="text-[9px] text-text-secondary-light -mb-1">6</span>
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">y</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex flex-col items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="text-[9px] text-text-secondary-light -mb-1">7</span>
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">u</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex flex-col items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="text-[9px] text-text-secondary-light -mb-1">8</span>
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">i</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex flex-col items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="text-[9px] text-text-secondary-light -mb-1">9</span>
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">o</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex flex-col items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="text-[9px] text-text-secondary-light -mb-1">0</span>
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">p</span>
+</div>
+</div>
+<!-- Row 2: A S D F G H J K L -->
+<div class="flex justify-between gap-1 w-full px-3">
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">a</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">s</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">d</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">f</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">g</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">h</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">j</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">k</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">l</span>
+</div>
+</div>
+<!-- Row 3: Shift, Z X C V B N M, Backspace -->
+<div class="flex justify-between gap-1 w-full">
+<!-- Shift Key -->
+<div class="w-11 h-11 rounded-md flex items-center justify-center shadow-sm text-text-primary-light" style="background-color: #CFD3DF;">
+<span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">z</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">x</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">c</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">v</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">b</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">n</span>
+</div>
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-title-md text-[17px] font-semibold text-text-primary-light">m</span>
+</div>
+<!-- Backspace Key -->
+<div class="w-11 h-11 rounded-md flex items-center justify-center shadow-sm text-text-primary-light" style="background-color: #CFD3DF;">
+<span class="material-symbols-outlined text-[20px]">backspace</span>
+</div>
+</div>
+<!-- Row 4: ?123, Comma, Spacebar ('English'), Period, Action/Return Key -->
+<div class="flex justify-between gap-1.5 w-full pt-0.5">
+<!-- Numeric Mode -->
+<div class="w-12 h-11 rounded-md flex items-center justify-center shadow-sm font-label-md text-[13px] font-bold text-text-primary-light" style="background-color: #CFD3DF;">
+            ?123
+          </div>
+<!-- Emoji / Symbol -->
+<div class="w-9 h-11 rounded-md flex items-center justify-center shadow-sm text-text-primary-light" style="background-color: #CFD3DF;">
+<span class="material-symbols-outlined text-[19px]">mood</span>
+</div>
+<!-- Spacebar Pill -->
+<div class="flex-1 h-11 bg-surface-container-lowest rounded-md flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="font-caption-sm text-caption-sm text-text-secondary-light">English</span>
+</div>
+<!-- Period Key -->
+<div class="w-9 h-11 rounded-md flex items-center justify-center shadow-sm font-title-md text-[18px] text-text-primary-light font-bold" style="background-color: #CFD3DF;">
+            .
+          </div>
+<!-- Return / Done Key (Branded primary container) -->
+<div class="w-12 h-11 bg-primary text-on-primary rounded-md flex items-center justify-center shadow-md active:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-[20px]">keyboard_return</span>
+</div>
+</div>
+</div>
+<!-- 5. Android System Navigation Bar (Bottom Gestures / Soft keys) -->
+<div class="w-full h-8 flex items-center justify-around px-16 text-text-secondary-light" style="background-color: #DDE0E9;">
+<!-- Back (Triangle) -->
+<span class="material-symbols-outlined text-[17px] opacity-70">arrow_back_ios</span>
+<!-- Home (Circle) -->
+<span class="w-3.5 h-3.5 rounded-full border-2 border-text-secondary-light opacity-70"></span>
+<!-- Overview (Square) -->
+<span class="w-3 h-3 rounded-xs border-2 border-text-secondary-light opacity-70"></span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive micro-delight: Clicking inline suggestions updates the focused web field
+  const inputEl = document.getElementById('targetInputText');
+  const btn1 = document.getElementById('fillPrimaryBtn');
+  const btn2 = document.getElementById('fillAIBtn');
+  const btn3 = document.getElementById('fillLaterBtn');
+
+  if (btn1 && inputEl) {
+    btn1.addEventListener('click', () => {
+      inputEl.textContent = '₹26,00,000';
+      inputEl.classList.remove('text-text-secondary-light');
+      inputEl.classList.add('text-text-primary-light', 'font-bold');
+    });
+  }
+
+  if (btn2 && inputEl) {
+    btn2.addEventListener('click', () => {
+      inputEl.textContent = '₹28,50,000';
+      inputEl.classList.remove('text-text-secondary-light');
+      inputEl.classList.add('text-tag-ai-text', 'font-bold');
+    });
+  }
+
+  if (btn3 && inputEl) {
+    btn3.addEventListener('click', () => {
+      inputEl.textContent = 'Saved for later review';
+      inputEl.classList.remove('text-text-primary-light');
+      inputEl.classList.add('text-tag-skipped-text', 'italic');
+    });
+  }
+</script></main></body></html>

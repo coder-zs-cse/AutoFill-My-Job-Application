@@ -1,0 +1,68 @@
+{
+  "$comment": "Single source of truth for Tier 1 normalization. Read at runtime by Kotlin (autofill-core resources) and Python (apps/api/app/matching). Never copy these lists into code.",
+  "version": 1,
+  "possessive_suffixes": [
+    "'s",
+    "’s"
+  ],
+  "stopwords": [
+    "a",
+    "an",
+    "the",
+    "your",
+    "you",
+    "my",
+    "of",
+    "in",
+    "for",
+    "to",
+    "please",
+    "enter",
+    "provide",
+    "what",
+    "is",
+    "are",
+    "do",
+    "if",
+    "any",
+    "and",
+    "or",
+    "eg"
+  ],
+  "qualifiers": [
+    "current",
+    "present",
+    "expected",
+    "previous",
+    "last",
+    "first",
+    "middle",
+    "company",
+    "reference",
+    "emergency",
+    "father",
+    "mother",
+    "spouse",
+    "alternate",
+    "secondary",
+    "permanent"
+  ],
+  "lemma_rules": [
+    {
+      "suffix": "ies",
+      "replace": "y",
+      "min_length": 5
+    },
+    {
+      "suffix": "s",
+      "replace": "",
+      "min_length": 4,
+      "not_after": [
+        "s",
+        "u",
+        "i"
+      ]
+    }
+  ],
+  "$lemma_comment": "'not_after' guards words like address, previous, status, analysis. Qualifiers and aliases go through the SAME normalize() at load time."
+}

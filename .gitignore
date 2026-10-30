@@ -1,0 +1,15 @@
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+# Android
+apps/mobile/android/.gradle/
+apps/mobile/android/build/
+apps/mobile/android/**/build/
+apps/mobile/android/local.properties
+*.keystore
+!apps/mobile/android/app/debug.keystore
+# RN
+apps/mobile/.metro-health-check*

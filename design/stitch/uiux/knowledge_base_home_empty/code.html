@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#F3F0FA;}body{overscroll-behavior:none;font-family:'Nunito Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.clay-card{background:linear-gradient(180deg,#FFFFFF 0%,#FAF8FF 100%);box-shadow:12px 12px 24px rgba(110,90,180,0.18),-8px -8px 18px rgba(255,255,255,0.90),inset 4px 4px 8px rgba(255,255,255,0.80),inset -4px -4px 8px rgba(110,90,180,0.10);border-radius:2rem;}.clay-btn{background:linear-gradient(180deg,#FFFFFF 0%,#FAF8FF 100%);box-shadow:6px 6px 14px rgba(110,90,180,0.16),-4px -4px 10px rgba(255,255,255,0.90),inset 2px 2px 4px rgba(255,255,255,0.80),inset -2px -2px 4px rgba(110,90,180,0.08);}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tag-skipped-bg": "#ECEAF2", "tag-alias-text": "#0F6A48", "tag-semantic-text": "#1C4F94", "tag-gap-bg": "#FFEDB8", "tag-error-text": "#9A2A1E", "on-tertiary-fixed": "#2b1700", "primary-fixed-dim": "#c7bfff", "surface-tint": "#5a48ce", "on-secondary": "#ffffff", "on-error-container": "#93000a", "icon-bg-sky": "#E2EEFF", "text-primary-dark": "#F1EEFA", "on-primary-fixed-variant": "#422bb5", "on-tertiary-container": "#fffbff", "on-tertiary": "#ffffff", "tertiary": "#845000", "text-placeholder": "#9A93B3", "outline": "#787585", "inverse-surface": "#322c49", "tertiary-fixed": "#ffddba", "tag-semantic-bg": "#D4E6FF", "icon-bg-lavender": "#E9E4FF", "error": "#ba1a1a", "outline-variant": "#c8c4d6", "on-background": "#1d1733", "canvas-light": "#F3F0FA", "tag-skipped-text": "#5E5874", "icon-bg-peach": "#FFE8DC", "secondary": "#5544d0", "on-error": "#ffffff", "primary-container": "#7160e6", "on-secondary-fixed": "#160066", "surface-container-high": "#ede4ff", "surface": "#fdf7ff", "tertiary-fixed-dim": "#ffb865", "tag-ai-text": "#5B3BB8", "surface-dim": "#dfd5fa", "tertiary-container": "#a66600", "tag-gap-text": "#7A5300", "on-surface-variant": "#474554", "tag-alias-bg": "#C9F2E1", "surface-bright": "#fdf7ff", "secondary-fixed": "#e4dfff", "error-container": "#ffdad6", "primary": "#5845cb", "on-secondary-fixed-variant": "#3f2aba", "secondary-fixed-dim": "#c6bfff", "primary-fixed": "#e4dfff", "on-surface": "#1d1733", "surface-container-highest": "#e7deff", "inverse-primary": "#c7bfff", "destructive": "#B3261E", "icon-bg-mint": "#DDF7EC", "text-secondary-dark": "#B3ACCB", "text-primary-light": "#2A2440", "surface-container": "#f2ebff", "on-primary-container": "#fffbff", "background": "#fdf7ff", "surface-variant": "#e7deff", "on-primary-fixed": "#170065", "surface-container-low": "#f8f1ff", "inverse-on-surface": "#f5eeff", "tag-error-bg": "#FFD9D4", "on-secondary-container": "#fffbff", "canvas-dark": "#1B1828", "secondary-container": "#6e60ea", "surface-container-lowest": "#ffffff", "text-secondary-light": "#6B6485", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#673d00" }, borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" }, spacing: { margin: "20px", "space-lg": "16px", gutter: "12px", "space-md": "12px", "space-sm": "8px", "space-xs": "4px", "space-xl": "18px" }, fontFamily: { "title-md": ["Nunito Sans"], "caption-sm": ["Nunito Sans"], "display-lg": ["Nunito Sans"], "label-md": ["Nunito Sans"], "body-md": ["Nunito Sans"] }, fontSize: { "title-md": ["20px", { lineHeight: "26px", fontWeight: "700" }], "caption-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "display-lg": ["28px", { lineHeight: "34px", fontWeight: "800" }], "label-md": ["13px", { lineHeight: "18px", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-canvas-light text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-canvas-light/80 backdrop-blur-xl"><div class="h-20 px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><button aria-label="Menu" class="clay-btn w-10 h-10 rounded-full flex items-center justify-center text-text-primary-light active:scale-95 transition-transform"><span class="material-symbols-rounded text-[22px]">menu</span></button><h1 class="font-title-md text-title-md text-text-primary-light tracking-tight">Knowledge Base</h1></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-32 bg-canvas-light px-margin"><div class="flex flex-col w-full max-w-[480px] mx-auto">
+<!-- Top Segmented Control (Carved Inset Track) -->
+<div class="w-full mb-6">
+<div class="w-full h-14 p-1.5 rounded-full flex items-center justify-between relative" style="background-color: #F3F0FA; box-shadow: inset 4px 4px 8px rgba(110, 90, 180, 0.16), inset -4px -4px 8px rgba(255, 255, 255, 0.70);">
+<!-- Active Tab: Questions -->
+<button class="flex-1 h-full rounded-full flex items-center justify-center font-label-md text-label-md text-text-primary-light transition-all active:scale-[0.98] select-none" id="tab-questions" style="background: linear-gradient(180deg, #FFFFFF 0%, #FAF8FF 100%); box-shadow: 4px 4px 10px rgba(110, 90, 180, 0.14), -3px -3px 8px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(255, 255, 255, 0.80), inset -2px -2px 4px rgba(110, 90, 180, 0.08);">
+<span class="flex items-center gap-1.5 font-bold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">help_center</span>
+          Questions
+        </span>
+</button>
+<!-- Inactive Tab: Stories & Prefs -->
+<button class="flex-1 h-full rounded-full flex items-center justify-center font-label-md text-label-md text-text-secondary-light hover:text-text-primary-light transition-all active:scale-[0.98] select-none" id="tab-stories">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+          Stories &amp; Prefs
+        </span>
+</button>
+</div>
+</div>
+<!-- Hero Visual & Empty State Canvas -->
+<div class="flex flex-col items-center justify-center w-full px-2 py-4">
+<!-- Tactile Clay Sculpted Illustration -->
+<div class="relative w-64 h-60 flex items-center justify-center select-none" id="clay-stage">
+<!-- Ambient Floor Shadow -->
+<div class="absolute bottom-4 w-44 h-8 rounded-full blur-md opacity-35 bg-primary/30"></div>
+<!-- Clay Illustration (3D Tactile Open Chest & Floating Elements) -->
+<svg class="w-full h-full relative z-10 filter drop-shadow-[0_12px_24px_rgba(110,90,180,0.18)]" fill="none" viewbox="0 0 260 240" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Gradients for Multi-light Depth -->
+<lineargradient gradientunits="userSpaceOnUse" id="chestInner" x1="130" x2="130" y1="110" y2="185">
+<stop offset="0%" stop-color="#E5DFF8"></stop>
+<stop offset="100%" stop-color="#D6CEF2"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="chestBody" x1="130" x2="130" y1="135" y2="210">
+<stop offset="0%" stop-color="#FFFFFF"></stop>
+<stop offset="100%" stop-color="#ECE7FA"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="blobGrad" x1="120" x2="145" y1="50" y2="115">
+<stop offset="0%" stop-color="#9A8BF7"></stop>
+<stop offset="50%" stop-color="#7C6CF2"></stop>
+<stop offset="100%" stop-color="#604FE3"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="peachSphere" x1="42" x2="62" y1="68" y2="88">
+<stop offset="0%" stop-color="#FFF5F0"></stop>
+<stop offset="50%" stop-color="#FFE8DC"></stop>
+<stop offset="100%" stop-color="#FCD0BD"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="mintSphere" x1="198" x2="222" y1="55" y2="79">
+<stop offset="0%" stop-color="#F3FDF8"></stop>
+<stop offset="50%" stop-color="#DDF7EC"></stop>
+<stop offset="100%" stop-color="#B8ECD5"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="lavenderSphere" x1="68" x2="88" y1="162" y2="182">
+<stop offset="0%" stop-color="#F7F5FF"></stop>
+<stop offset="50%" stop-color="#E9E4FF"></stop>
+<stop offset="100%" stop-color="#D1C7FA"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="skySphere" x1="195" x2="211" y1="140" y2="156">
+<stop offset="0%" stop-color="#F4F8FF"></stop>
+<stop offset="50%" stop-color="#E2EEFF"></stop>
+<stop offset="100%" stop-color="#C5DEFF"></stop>
+</lineargradient>
+<lineargradient id="rimLight" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"></stop>
+<stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"></stop>
+</lineargradient>
+<filter height="120%" id="softGlow" width="120%" x="-10%" y="-10%">
+<fegaussianblur result="blur" stddeviation="3"></fegaussianblur>
+<fecomposite in="SourceGraphic" in2="blur" operator="over"></fecomposite>
+</filter>
+</defs>
+<!-- Floating Pastel Satellite Spheres -->
+<!-- 1. Mint Clay Pebble (Top Right) -->
+<g class="animate-[bounce_4.5s_infinite_ease-in-out]">
+<circle cx="210" cy="67" fill="url(#mintSphere)" r="14"></circle>
+<ellipse cx="206" cy="62" fill="#FFFFFF" opacity="0.8" rx="6" ry="3" transform="rotate(-25 206 62)"></ellipse>
+</g>
+<!-- 2. Peach Clay Pebble (Top Left) -->
+<g class="animate-[bounce_3.8s_infinite_ease-in-out_0.5s]">
+<circle cx="52" cy="78" fill="url(#peachSphere)" r="11"></circle>
+<ellipse cx="49" cy="74" fill="#FFFFFF" opacity="0.85" rx="4.5" ry="2.5" transform="rotate(-30 49 74)"></ellipse>
+</g>
+<!-- 3. Lavender Miniature Pebble (Bottom Left) -->
+<g class="animate-[bounce_5.2s_infinite_ease-in-out_1s]">
+<circle cx="78" cy="172" fill="url(#lavenderSphere)" r="9"></circle>
+<ellipse cx="75" cy="169" fill="#FFFFFF" opacity="0.8" rx="3.5" ry="2" transform="rotate(-20 75 169)"></ellipse>
+</g>
+<!-- 4. Sky Miniature Pebble (Mid Right) -->
+<g class="animate-[bounce_4.1s_infinite_ease-in-out_1.5s]">
+<circle cx="203" cy="148" fill="url(#skySphere)" r="7.5"></circle>
+<ellipse cx="201" cy="145" fill="#FFFFFF" opacity="0.85" rx="2.8" ry="1.5" transform="rotate(-15 201 145)"></ellipse>
+</g>
+<!-- Clay Chest: Back Rim & Hollow Interior -->
+<path d="M54 135 C54 116 72 108 130 108 C188 108 206 116 206 135 L202 144 C184 154 158 158 130 158 C102 158 76 154 58 144 Z" fill="url(#chestInner)"></path>
+<!-- Inner shadow rim on chest cavity -->
+<ellipse cx="130" cy="136" fill="#BFB5E6" opacity="0.45" rx="68" ry="16"></ellipse>
+<!-- Buoyant Clay Central Mascot (Inflated Blob with 3D '?') -->
+<g class="animate-[bounce_3.2s_infinite_ease-in-out_0.2s]">
+<!-- Mascot Body Cushion -->
+<path d="M130 52 C158 52 174 68 171 95 C168 122 148 132 130 132 C112 132 92 122 89 95 C86 68 102 52 130 52 Z" fill="url(#blobGrad)"></path>
+<!-- Pillowy Top Specular Highlight on Blob -->
+<path d="M106 68 C116 58 138 56 152 64 C155 66 148 72 136 71 C121 70 110 74 106 68 Z" fill="#FFFFFF" opacity="0.75"></path>
+<ellipse cx="118" cy="65" fill="#FFFFFF" opacity="0.9" rx="10" ry="4" transform="rotate(-15 118 65)"></ellipse>
+<!-- Clay Question Mark '?' -->
+<g fill="#FFFFFF" filter="url(#softGlow)">
+<!-- Top Hook Curve -->
+<path d="M122 75 C122 70.5 125.5 67 130.5 67 C135.5 67 139 70 139 74 C139 77.8 136.2 80.5 133.5 83 C130.5 85.8 129 88.5 129 93.5 H133 C133 89.8 134.8 87.5 137.2 85 C140.5 82 144 78.5 144 73.5 C144 66.8 138.2 62 130.5 62 C122.8 62 117 67 117 74.8 L122 75 Z"></path>
+<!-- Bottom Clay Dot -->
+<circle cx="131" cy="103" r="3.2"></circle>
+</g>
+</g>
+<!-- Clay Chest: Front Puffy Vessel -->
+<path d="M50 138 C50 133 60 130 84 130 L176 130 C200 130 210 133 210 138 L202 188 C198 205 180 212 130 212 C80 212 62 205 58 188 Z" fill="url(#chestBody)"></path>
+<!-- Chest Top Pillowy Rim Lip -->
+<rect fill="#FFFFFF" height="15" rx="7.5" width="156" x="52" y="128"></rect>
+<rect fill="none" height="11" rx="5.5" stroke="url(#rimLight)" stroke-width="2" width="152" x="54" y="130"></rect>
+<!-- Inset Lock Accent (Carved Clay Pill on Front) -->
+<rect fill="#F3F0FA" height="22" rx="8" width="16" x="122" y="148"></rect>
+<circle cx="130" cy="156" fill="#B7ADC9" r="3"></circle>
+<path d="M130 159 L130 164" stroke="#B7ADC9" stroke-linecap="round" stroke-width="2"></path>
+<!-- Soft Chest Highlight Strokes -->
+<path d="M68 152 C65 168 68 186 78 194" opacity="0.8" stroke="#FFFFFF" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+</div>
+<!-- Friendly Empty State Typography -->
+<div class="text-center mt-3 mb-8 px-2 max-w-[340px]">
+<h2 class="font-title-md text-title-md text-text-primary-light font-extrabold tracking-tight mb-2">
+        Your answer bank is empty
+      </h2>
+<p class="font-body-md text-body-md text-text-secondary-light leading-relaxed">
+        Import from your resume or add your first question to unlock auto-filling bliss.
+      </p>
+</div>
+<!-- Clay CTA Action Stack -->
+<div class="w-full flex flex-col gap-space-md">
+<!-- Primary Action: Import from Resume (56px Lavender Clay Pill) -->
+<button class="w-full h-14 rounded-full flex items-center justify-center gap-2.5 font-label-md text-label-md text-on-primary font-bold transition-all active:scale-[0.97] select-none" id="btn-import" style="background: linear-gradient(180deg, #8778FA 0%, #705FE8 100%); box-shadow: 10px 10px 22px rgba(110, 90, 180, 0.28), -6px -6px 14px rgba(255, 255, 255, 0.85), inset 0 2px 4px rgba(255, 255, 255, 0.65), inset 0 -2px 4px rgba(70, 50, 160, 0.25);">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+<span>Import from resume</span>
+</button>
+<!-- Secondary Action: Add Manually (56px White Clay Pill) -->
+<button class="w-full h-14 rounded-full flex items-center justify-center gap-2 font-label-md text-label-md text-primary font-bold transition-all active:scale-[0.97] select-none" id="btn-add-manually" style="background: linear-gradient(180deg, #FFFFFF 0%, #FAF8FF 100%); box-shadow: 8px 8px 18px rgba(110, 90, 180, 0.16), -5px -5px 12px rgba(255, 255, 255, 0.90), inset 2px 2px 4px rgba(255, 255, 255, 0.80), inset -2px -2px 4px rgba(110, 90, 180, 0.08);">
+<span class="material-symbols-outlined text-[20px] font-bold">add</span>
+<span>Add manually</span>
+</button>
+</div>
+<!-- Delightful Hint Badge / Tip Pill -->
+<div class="mt-7 flex items-center gap-2 px-3.5 py-2 rounded-full" style="background-color: rgba(233, 228, 255, 0.65); box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.8), 2px 2px 6px rgba(110, 90, 180, 0.06);">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-caption-sm text-caption-sm text-tag-ai-text font-semibold">
+        AI will parse questions, achievements &amp; stats
+      </span>
+</div>
+</div>
+</div>
+<script>
+  // Clay Segmented Toggle Micro-interaction
+  const tabQuestions = document.getElementById('tab-questions');
+  const tabStories = document.getElementById('tab-stories');
+
+  const elevatedStyle = "background: linear-gradient(180deg, #FFFFFF 0%, #FAF8FF 100%); box-shadow: 4px 4px 10px rgba(110, 90, 180, 0.14), -3px -3px 8px rgba(255, 255, 255, 0.85), inset 2px 2px 4px rgba(255, 255, 255, 0.80), inset -2px -2px 4px rgba(110, 90, 180, 0.08);";
+  const inactiveStyle = "background: transparent; box-shadow: none;";
+
+  function setActiveTab(activeEl, inactiveEl) {
+    activeEl.setAttribute('style', elevatedStyle);
+    activeEl.classList.remove('text-text-secondary-light');
+    activeEl.classList.add('text-text-primary-light', 'font-bold');
+
+    inactiveEl.setAttribute('style', inactiveStyle);
+    inactiveEl.classList.remove('text-text-primary-light', 'font-bold');
+    inactiveEl.classList.add('text-text-secondary-light');
+  }
+
+  tabQuestions.addEventListener('click', () => setActiveTab(tabQuestions, tabStories));
+  tabStories.addEventListener('click', () => setActiveTab(tabStories, tabQuestions));
+
+  // Gentle Interactive Haptic Feedback on Clay Mascot
+  const stage = document.getElementById('clay-stage');
+  stage.addEventListener('pointerdown', () => {
+    stage.style.transform = 'scale(0.96)';
+    stage.style.transition = 'transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1)';
+  });
+  
+  window.addEventListener('pointerup', () => {
+    stage.style.transform = 'scale(1)';
+  });
+</script></main><div class="fixed bottom-0 w-full z-50 pb-safe pointer-events-none px-4 mb-4"><nav class="clay-card pointer-events-auto w-full max-w-[480px] mx-auto py-2 px-3 flex items-center justify-around" data-active-classes="bg-primary text-on-primary shadow-[inset_0_2px_4px_rgba(255,255,255,0.6)] font-bold"><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[48px] py-1 px-3 rounded-full text-text-secondary-light transition-all active:scale-95" data-path="knowledge-base" href="#"><span class="material-symbols-rounded text-[24px]">menu_book</span><span class="font-caption-sm text-caption-sm mt-0.5">Knowledge</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[48px] py-1 px-3 rounded-full text-text-secondary-light transition-all active:scale-95" data-path="sync-history" href="#"><span class="material-symbols-rounded text-[24px]">history</span><span class="font-caption-sm text-caption-sm mt-0.5">History</span></a><a class="relative flex flex-col items-center justify-center min-w-[64px] min-h-[48px] py-1 px-3 rounded-full text-text-secondary-light transition-all active:scale-95" data-path="resume-gaps" href="#"><span class="relative flex items-center justify-center"><span class="material-symbols-rounded text-[24px]">inbox</span><span class="absolute -top-1 -right-2 bg-tag-gap-bg text-tag-gap-text font-caption-sm text-[10px] leading-none px-1.5 py-0.5 rounded-full font-bold shadow-sm">3</span></span><span class="font-caption-sm text-caption-sm mt-0.5">Gaps</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[48px] py-1 px-3 rounded-full text-text-secondary-light transition-all active:scale-95" data-path="field-playground" href="#"><span class="material-symbols-rounded text-[24px]">science</span><span class="font-caption-sm text-caption-sm mt-0.5">Playground</span></a></nav></div></body></html>

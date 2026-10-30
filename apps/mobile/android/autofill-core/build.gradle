@@ -1,0 +1,19 @@
+// Pure Kotlin/JVM module. No Android SDK on the classpath: if it compiles here, the matching
+// logic cannot accidentally depend on Android, and its tests run in milliseconds on the JVM.
+apply plugin: 'java-library'
+apply plugin: 'org.jetbrains.kotlin.jvm'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+sourceSets {
+    // Single source of truth shared with the Python backend. Do NOT copy these files.
+    main.resources.srcDirs += "${rootDir}/../../../packages/contracts/matching"
+}
+
+dependencies {
+    implementation("com.google.code.gson:gson:2.11.0")
+    testImplementation("junit:junit:4.13.2")
+}

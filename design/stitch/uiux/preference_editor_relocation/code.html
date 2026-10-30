@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "text-secondary-dark": "#B3ACCB", "on-tertiary-fixed-variant": "#673d00", "text-primary-light": "#2A2440", "surface-variant": "#e7deff", "on-primary-fixed-variant": "#422bb5", "on-background": "#1d1733", "tag-error-text": "#9A2A1E", "on-secondary-fixed-variant": "#3f2aba", "on-tertiary-fixed": "#2b1700", "tertiary": "#845000", "tag-ai-text": "#5B3BB8", "destructive": "#B3261E", "error-container": "#ffdad6", "on-secondary-fixed": "#160066", "on-secondary": "#ffffff", "surface-dim": "#dfd5fa", "secondary-fixed": "#e4dfff", "primary-container": "#7160e6", "on-error-container": "#93000a", "background": "#fdf7ff", "on-primary": "#ffffff", "icon-bg-mint": "#DDF7EC", "tag-semantic-bg": "#D4E6FF", "icon-bg-peach": "#FFE8DC", "surface-container-highest": "#e7deff", "canvas-light": "#F3F0FA", "tag-skipped-bg": "#ECEAF2", "on-surface-variant": "#474554", "surface-container-lowest": "#ffffff", "tertiary-fixed-dim": "#ffb865", "inverse-on-surface": "#f5eeff", "error": "#ba1a1a", "surface-container": "#f2ebff", "tag-gap-text": "#7A5300", "text-placeholder": "#9A93B3", "surface-bright": "#fdf7ff", "secondary-container": "#6e60ea", "secondary-fixed-dim": "#c6bfff", "surface-tint": "#5a48ce", "text-secondary-light": "#6B6485", "secondary": "#5544d0", "on-primary-fixed": "#170065", "primary-fixed-dim": "#c7bfff", "tertiary-container": "#a66600", "tag-alias-bg": "#C9F2E1", "inverse-surface": "#322c49", "surface-container-low": "#f8f1ff", "inverse-primary": "#c7bfff", "primary": "#5845cb", "tag-semantic-text": "#1C4F94", "on-secondary-container": "#fffbff", "tag-skipped-text": "#5E5874", "tertiary-fixed": "#ffddba", "canvas-dark": "#1B1828", "surface": "#fdf7ff", "icon-bg-sky": "#E2EEFF", "primary-fixed": "#e4dfff", "surface-container-high": "#ede4ff", "outline-variant": "#c8c4d6", "outline": "#787585", "text-primary-dark": "#F1EEFA", "on-error": "#ffffff", "icon-bg-lavender": "#E9E4FF", "tag-alias-text": "#0F6A48", "on-primary-container": "#fffbff", "on-surface": "#1d1733", "on-tertiary-container": "#fffbff", "tag-error-bg": "#FFD9D4", "on-tertiary": "#ffffff", "tag-gap-bg": "#FFEDB8" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter": "12px", "space-xl": "18px", "space-sm": "8px", "margin": "20px", "space-lg": "16px", "space-md": "12px", "space-xs": "4px" }, "fontFamily": { "display-lg": ["Nunito Sans"], "title-md": ["Nunito Sans"], "caption-sm": ["Nunito Sans"], "label-md": ["Nunito Sans"], "body-md": ["Nunito Sans"] }, "fontSize": { "display-lg": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "title-md": ["20px", { "lineHeight": "26px", "fontWeight": "700" }], "caption-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#F3F0FA;}body{overscroll-behavior:y contain;font-family:"Nunito Sans",sans-serif;color:#1d1733;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-canvas-light text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-canvas-light/80 backdrop-blur-xl"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 -ml-space-xs rounded-full flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-on-surface tracking-normal">Preference Editor   Relocation</h1></div><div class="flex items-center gap-space-md"><button class="h-11 px-space-md flex items-center justify-center font-title-md text-[16px] text-primary hover:text-primary-container font-bold transition-colors" type="button">Save</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_2px_6px_rgba(88,69,203,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-canvas-light pb-safe"><div class="flex flex-col w-full px-margin pb-8 space-y-space-lg max-w-[480px] mx-auto select-none">
+<!-- Category Pill Badge -->
+<div class="flex items-center justify-start pt-2">
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-icon-bg-sky text-tag-semantic-text shadow-[3px_3px_8px_rgba(110,90,180,0.12),-2px_-2px_6px_rgba(255,255,255,0.85)]">
+<span class="material-symbols-outlined text-[16px] text-tag-semantic-text" style="font-variation-settings: 'FILL' 1;">near_me</span>
+<span class="font-label-md text-label-md font-bold tracking-tight">Relocation &amp; Mobility Preference</span>
+</div>
+</div>
+<!-- Card 1: Cities I'd Move To -->
+<div class="w-full rounded-lg p-5 bg-gradient-to-b from-white to-[#FAF8FF] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.9)] relative overflow-hidden transition-all duration-300">
+<div class="absolute inset-0 pointer-events-none rounded-lg shadow-[inset_4px_4px_8px_rgba(255,255,255,0.8),inset_-4px_-4px_8px_rgba(110,90,180,0.08)]"></div>
+<div class="flex items-start justify-between mb-1">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-icon-bg-lavender flex items-center justify-center shadow-[inset_1px_1px_3px_rgba(255,255,255,0.9),2px_2px_6px_rgba(110,90,180,0.14)]">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div>
+<h2 class="font-title-md text-[18px] text-text-primary-light font-bold leading-tight">Cities I'd move to</h2>
+<p class="font-caption-sm text-caption-sm text-text-secondary-light mt-0.5">ATS applications match these exact geo-hubs.</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-icon-bg-mint font-label-md text-[11px] text-tag-alias-text font-bold" id="city-count-badge">3 selected</span>
+</div>
+<!-- Chips Container -->
+<div class="flex flex-wrap gap-2.5 mt-4" id="city-chips-container">
+<!-- Bangalore Chip -->
+<div class="city-chip group inline-flex items-center gap-1.5 h-9 pl-3.5 pr-2.5 rounded-full bg-white text-text-primary-light shadow-[4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.95),inset_1px_1px_2px_rgba(255,255,255,0.9)] transition-transform active:scale-95">
+<span class="font-label-md text-label-md font-semibold text-text-primary-light">Bangalore</span>
+<button aria-label="Remove Bangalore" class="w-5 h-5 rounded-full flex items-center justify-center text-text-placeholder hover:text-tag-error-text hover:bg-tag-error-bg/50 transition-colors" onclick="removeChip(this)" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Pune Chip -->
+<div class="city-chip group inline-flex items-center gap-1.5 h-9 pl-3.5 pr-2.5 rounded-full bg-white text-text-primary-light shadow-[4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.95),inset_1px_1px_2px_rgba(255,255,255,0.9)] transition-transform active:scale-95">
+<span class="font-label-md text-label-md font-semibold text-text-primary-light">Pune</span>
+<button aria-label="Remove Pune" class="w-5 h-5 rounded-full flex items-center justify-center text-text-placeholder hover:text-tag-error-text hover:bg-tag-error-bg/50 transition-colors" onclick="removeChip(this)" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Hyderabad Chip -->
+<div class="city-chip group inline-flex items-center gap-1.5 h-9 pl-3.5 pr-2.5 rounded-full bg-white text-text-primary-light shadow-[4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.95),inset_1px_1px_2px_rgba(255,255,255,0.9)] transition-transform active:scale-95">
+<span class="font-label-md text-label-md font-semibold text-text-primary-light">Hyderabad</span>
+<button aria-label="Remove Hyderabad" class="w-5 h-5 rounded-full flex items-center justify-center text-text-placeholder hover:text-tag-error-text hover:bg-tag-error-bg/50 transition-colors" onclick="removeChip(this)" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Add City Interactive Trigger -->
+<button class="inline-flex items-center gap-1.5 h-9 px-3.5 rounded-full bg-surface-container-low text-primary shadow-[inset_1px_1px_2px_rgba(255,255,255,0.7),2px_2px_6px_rgba(110,90,180,0.08)] hover:bg-surface-variant transition-all active:scale-95" id="add-city-btn" onclick="openCityModal()" type="button">
+<span class="material-symbols-outlined text-[16px] font-bold">add</span>
+<span class="font-label-md text-label-md font-bold">Add city</span>
+</button>
+</div>
+<!-- Quick Add Suggestions -->
+<div class="mt-4 pt-3 flex items-center gap-2 overflow-x-auto no-scrollbar">
+<span class="font-caption-sm text-caption-sm text-text-placeholder whitespace-nowrap">Suggested:</span>
+<button class="px-2.5 py-1 rounded-full bg-canvas-light text-text-secondary-light font-caption-sm text-caption-sm hover:text-primary transition-colors whitespace-nowrap shadow-[inset_1px_1px_3px_rgba(110,90,180,0.08)]" onclick="quickAddCity('Mumbai')" type="button">+ Mumbai</button>
+<button class="px-2.5 py-1 rounded-full bg-canvas-light text-text-secondary-light font-caption-sm text-caption-sm hover:text-primary transition-colors whitespace-nowrap shadow-[inset_1px_1px_3px_rgba(110,90,180,0.08)]" onclick="quickAddCity('Gurugram')" type="button">+ Gurugram</button>
+<button class="px-2.5 py-1 rounded-full bg-canvas-light text-text-secondary-light font-caption-sm text-caption-sm hover:text-primary transition-colors whitespace-nowrap shadow-[inset_1px_1px_3px_rgba(110,90,180,0.08)]" onclick="quickAddCity('Noida')" type="button">+ Noida</button>
+</div>
+</div>
+<!-- Card 2: Workplace & Mobility Toggles -->
+<div class="w-full rounded-lg p-5 bg-gradient-to-b from-white to-[#FAF8FF] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.9)] relative overflow-hidden">
+<div class="absolute inset-0 pointer-events-none rounded-lg shadow-[inset_4px_4px_8px_rgba(255,255,255,0.8),inset_-4px_-4px_8px_rgba(110,90,180,0.08)]"></div>
+<div class="flex items-center gap-2.5 mb-4">
+<div class="w-9 h-9 rounded-full bg-icon-bg-mint flex items-center justify-center shadow-[inset_1px_1px_3px_rgba(255,255,255,0.9),2px_2px_6px_rgba(110,90,180,0.12)]">
+<span class="material-symbols-outlined text-[18px] text-tag-alias-text" style="font-variation-settings: 'FILL' 1;">luggage</span>
+</div>
+<div>
+<h2 class="font-title-md text-[18px] text-text-primary-light font-bold leading-tight">Workplace &amp; mobility</h2>
+<p class="font-caption-sm text-caption-sm text-text-secondary-light mt-0.5">Automated decisions for remote and overseas roles.</p>
+</div>
+</div>
+<div class="space-y-4">
+<!-- Toggle Row 1: Remote -->
+<div class="flex items-center justify-between gap-3">
+<div class="flex-1 pr-2">
+<div class="font-label-md text-body-md font-bold text-text-primary-light">Open to remote</div>
+<div class="font-caption-sm text-caption-sm text-text-secondary-light">Auto-answer yes to remote-first openings</div>
+</div>
+<button aria-checked="true" class="w-14 h-8 rounded-full p-1 transition-colors duration-300 relative focus:outline-none bg-primary shadow-[inset_2px_2px_4px_rgba(50,30,120,0.35),inset_-2px_-2px_4px_rgba(255,255,255,0.25),0_3px_8px_rgba(124,108,242,0.3)]" id="toggle-remote" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="block w-6 h-6 rounded-full bg-white translate-x-6 transition-transform duration-300 shadow-[2px_2px_5px_rgba(0,0,0,0.2),-1px_-1px_3px_rgba(255,255,255,0.9),inset_0_1px_2px_rgba(255,255,255,0.9)]"></span>
+</button>
+</div>
+<!-- Soft Clay Inset Divider -->
+<div class="w-full h-1 rounded-full bg-canvas-light shadow-[inset_1px_1px_2px_rgba(110,90,180,0.12),inset_-1px_-1px_2px_rgba(255,255,255,0.8)]"></div>
+<!-- Toggle Row 2: Relocating Abroad -->
+<div class="flex items-center justify-between gap-3">
+<div class="flex-1 pr-2">
+<div class="font-label-md text-body-md font-bold text-text-primary-light">Open to relocating abroad</div>
+<div class="font-caption-sm text-caption-sm text-text-secondary-light">Requires visa sponsorship consideration</div>
+</div>
+<button aria-checked="false" class="w-14 h-8 rounded-full p-1 transition-colors duration-300 relative focus:outline-none bg-[#D8D2E7] shadow-[inset_2px_2px_5px_rgba(110,90,180,0.2),inset_-2px_-2px_4px_rgba(255,255,255,0.8)]" id="toggle-abroad" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="block w-6 h-6 rounded-full bg-white translate-x-0 transition-transform duration-300 shadow-[1px_2px_4px_rgba(110,90,180,0.25),-1px_-1px_2px_rgba(255,255,255,0.9)]"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Notes for AI -->
+<div class="w-full rounded-lg p-5 bg-gradient-to-b from-white to-[#FAF8FF] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.9)] relative overflow-hidden">
+<div class="absolute inset-0 pointer-events-none rounded-lg shadow-[inset_4px_4px_8px_rgba(255,255,255,0.8),inset_-4px_-4px_8px_rgba(110,90,180,0.08)]"></div>
+<div class="flex items-start justify-between mb-2">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-icon-bg-lavender flex items-center justify-center shadow-[inset_1px_1px_3px_rgba(255,255,255,0.9),2px_2px_6px_rgba(110,90,180,0.12)]">
+<span class="material-symbols-outlined text-[18px] text-tag-ai-text" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div>
+<h2 class="font-title-md text-[18px] text-text-primary-light font-bold leading-tight">Notes for AI</h2>
+<p class="font-caption-sm text-caption-sm text-text-secondary-light mt-0.5">Custom nuance for bespoke screening forms.</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-icon-bg-peach text-on-tertiary-fixed-variant shadow-[inset_1px_1px_2px_rgba(255,255,255,0.7)]">
+<span class="material-symbols-outlined text-[12px]">psychology</span>
+<span class="font-caption-sm text-[11px] font-bold">Personalized</span>
+</div>
+</div>
+<!-- Concave Clay Textarea Well -->
+<div class="mt-3 relative rounded-[20px] bg-canvas-light p-1 shadow-[inset_3px_3px_7px_rgba(110,90,180,0.16),inset_-3px_-3px_7px_rgba(255,255,255,0.95)]">
+<textarea class="w-full bg-transparent px-3.5 py-2.5 text-text-primary-light font-body-md text-body-md placeholder:text-text-placeholder focus:outline-none resize-none leading-relaxed" id="ai-notes-input" placeholder="Tell the copilot any relocation rules..." rows="3">Prefer Bangalore. Hyderabad only for senior roles.</textarea>
+<div class="flex items-center justify-between px-3 pb-2 pt-1 text-text-placeholder">
+<span class="font-caption-sm text-[11px] flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+          Applied to 14 ATS bots
+        </span>
+<span class="font-caption-sm text-[11px]" id="char-counter">46 characters</span>
+</div>
+</div>
+</div>
+<!-- Explanatory Resolution Simulation Card -->
+<div class="w-full rounded-[24px] p-4 bg-gradient-to-br from-[#FFF8EE] to-[#FFF1E4] shadow-[6px_6px_16px_rgba(190,130,50,0.12),-4px_-4px_12px_rgba(255,255,255,0.9)] relative overflow-hidden">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0 shadow-[inset_1px_1px_2px_rgba(255,255,255,0.9),1px_2px_5px_rgba(132,80,0,0.15)]">
+<span class="material-symbols-outlined text-[17px] text-tertiary" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<div class="flex-1 space-y-1.5">
+<p class="font-caption-sm text-caption-sm font-semibold text-tertiary">
+          How this resolves live screening prompts:
+        </p>
+<div class="p-2.5 rounded-[16px] bg-white/70 shadow-[inset_1px_1px_3px_rgba(255,255,255,0.8),2px_2px_6px_rgba(180,120,60,0.08)] text-text-primary-light font-body-md text-[13px] leading-snug">
+<span class="font-bold text-text-secondary-light">Prompt:</span> “Willing to relocate to Chennai?”<br/>
+<div class="mt-1 flex items-center gap-1.5 text-tag-error-text font-bold">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+<span>Would answer: “No / Only Bangalore, Pune, &amp; Hyderabad”</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Tactile Pill Actions -->
+<div class="pt-3 pb-2 flex flex-col items-center gap-3">
+<!-- Primary Inflated Clay Pill Button -->
+<button class="w-full h-14 rounded-full bg-primary text-on-primary font-title-md text-title-md font-bold tracking-wide flex items-center justify-center gap-2 shadow-[8px_8px_20px_rgba(88,69,203,0.38),-4px_-4px_12px_rgba(255,255,255,0.85),inset_0_2px_5px_rgba(255,255,255,0.65),inset_0_-2px_4px_rgba(40,25,120,0.25)] hover:brightness-105 active:scale-[0.98] transition-all" id="save-btn" onclick="handleSaveAction()" type="button">
+<span class="material-symbols-outlined text-[20px] font-bold" id="save-icon">verified</span>
+<span id="save-text">Save preferences</span>
+</button>
+<!-- Discard Secondary Clay Action -->
+<button class="h-10 px-6 rounded-full text-primary hover:text-primary-container font-label-md text-label-md font-bold transition-all active:scale-95" onclick="history.back()" type="button">
+      Discard changes
+    </button>
+</div>
+</div>
+<script>
+  function toggleSwitch(btn) {
+    const isChecked = btn.getAttribute('aria-checked') === 'true';
+    const newState = !isChecked;
+    btn.setAttribute('aria-checked', String(newState));
+    const knob = btn.firstElementChild;
+    
+    if (newState) {
+      btn.classList.remove('bg-[#D8D2E7]', 'shadow-[inset_2px_2px_5px_rgba(110,90,180,0.2),inset_-2px_-2px_4px_rgba(255,255,255,0.8)]');
+      btn.classList.add('bg-primary', 'shadow-[inset_2px_2px_4px_rgba(50,30,120,0.35),inset_-2px_-2px_4px_rgba(255,255,255,0.25),0_3px_8px_rgba(124,108,242,0.3)]');
+      knob.classList.remove('translate-x-0');
+      knob.classList.add('translate-x-6');
+    } else {
+      btn.classList.remove('bg-primary', 'shadow-[inset_2px_2px_4px_rgba(50,30,120,0.35),inset_-2px_-2px_4px_rgba(255,255,255,0.25),0_3px_8px_rgba(124,108,242,0.3)]');
+      btn.classList.add('bg-[#D8D2E7]', 'shadow-[inset_2px_2px_5px_rgba(110,90,180,0.2),inset_-2px_-2px_4px_rgba(255,255,255,0.8)]');
+      knob.classList.remove('translate-x-6');
+      knob.classList.add('translate-x-0');
+    }
+  }
+
+  function updateCountBadge() {
+    const container = document.getElementById('city-chips-container');
+    const chips = container.querySelectorAll('.city-chip');
+    const badge = document.getElementById('city-count-badge');
+    badge.textContent = chips.length + ' selected';
+  }
+
+  function removeChip(btn) {
+    const chip = btn.closest('.city-chip');
+    chip.style.transform = 'scale(0.8)';
+    chip.style.opacity = '0';
+    setTimeout(() => {
+      chip.remove();
+      updateCountBadge();
+    }, 150);
+  }
+
+  function quickAddCity(cityName) {
+    const container = document.getElementById('city-chips-container');
+    const addBtn = document.getElementById('add-city-btn');
+    
+    // Prevent duplicate
+    const existing = Array.from(container.querySelectorAll('.city-chip span')).some(el => el.textContent.trim().toLowerCase() === cityName.toLowerCase());
+    if (existing) return;
+
+    const div = document.createElement('div');
+    div.className = 'city-chip group inline-flex items-center gap-1.5 h-9 pl-3.5 pr-2.5 rounded-full bg-white text-text-primary-light shadow-[4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.95),inset_1px_1px_2px_rgba(255,255,255,0.9)] transition-transform active:scale-95';
+    div.innerHTML = `
+      <span class="font-label-md text-label-md font-semibold text-text-primary-light">${cityName}</span>
+      <button type="button" aria-label="Remove ${cityName}" onclick="removeChip(this)" class="w-5 h-5 rounded-full flex items-center justify-center text-text-placeholder hover:text-tag-error-text hover:bg-tag-error-bg/50 transition-colors">
+        <span class="material-symbols-outlined text-[14px]">close</span>
+      </button>
+    `;
+    container.insertBefore(div, addBtn);
+    updateCountBadge();
+  }
+
+  function openCityModal() {
+    const cityName = prompt("Enter city name (e.g. Chennai, Delhi, Gurgaon):");
+    if (cityName && cityName.trim()) {
+      quickAddCity(cityName.trim());
+    }
+  }
+
+  const notesInput = document.getElementById('ai-notes-input');
+  const charCounter = document.getElementById('char-counter');
+  notesInput.addEventListener('input', (e) => {
+    charCounter.textContent = `${e.target.value.length} characters`;
+  });
+
+  function handleSaveAction() {
+    const saveBtn = document.getElementById('save-btn');
+    const saveIcon = document.getElementById('save-icon');
+    const saveText = document.getElementById('save-text');
+
+    saveBtn.classList.remove('bg-primary');
+    saveBtn.classList.add('bg-tag-alias-text');
+    saveIcon.textContent = 'done_all';
+    saveText.textContent = 'Saved to Copilot!';
+
+    setTimeout(() => {
+      saveBtn.classList.remove('bg-tag-alias-text');
+      saveBtn.classList.add('bg-primary');
+      saveIcon.textContent = 'verified';
+      saveText.textContent = 'Save preferences';
+    }, 2200);
+  }
+</script></main></body></html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; } .clay-circle-btn { background: linear-gradient(180deg, #FFFFFF 0%, #FAF8FF 100%); box-shadow: 6px 6px 14px rgba(110, 90, 180, 0.16), -4px -4px 10px rgba(255, 255, 255, 0.9), inset 2px 2px 4px rgba(255, 255, 255, 0.8), inset -2px -2px 4px rgba(110, 90, 180, 0.1); } .clay-circle-btn:active { transform: scale(0.96); box-shadow: inset 2px 2px 5px rgba(110, 90, 180, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.7); }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-bright": "#fdf7ff", "error": "#ba1a1a", "on-secondary-container": "#fffbff", "inverse-surface": "#322c49", "tag-error-text": "#9A2A1E", "secondary-fixed-dim": "#c6bfff", "on-error": "#ffffff", "on-primary": "#ffffff", "inverse-on-surface": "#f5eeff", "tag-alias-bg": "#C9F2E1", "surface-tint": "#5a48ce", "surface-container-highest": "#e7deff", "on-tertiary-container": "#fffbff", "primary-container": "#7160e6", "tag-skipped-text": "#5E5874", "secondary-fixed": "#e4dfff", "tag-ai-text": "#5B3BB8", "surface-container-high": "#ede4ff", "surface-container-low": "#f8f1ff", "tertiary": "#845000", "tag-semantic-text": "#1C4F94", "secondary": "#5544d0", "text-secondary-dark": "#B3ACCB", "surface-container": "#f2ebff", "background": "#fdf7ff", "surface-variant": "#e7deff", "primary-fixed-dim": "#c7bfff", "surface": "#fdf7ff", "icon-bg-mint": "#DDF7EC", "inverse-primary": "#c7bfff", "text-secondary-light": "#6B6485", "secondary-container": "#6e60ea", "tertiary-container": "#a66600", "on-secondary-fixed-variant": "#3f2aba", "canvas-dark": "#1B1828", "tag-error-bg": "#FFD9D4", "on-primary-fixed": "#170065", "icon-bg-peach": "#FFE8DC", "surface-dim": "#dfd5fa", "on-tertiary-fixed-variant": "#673d00", "on-primary-container": "#fffbff", "outline": "#787585", "on-tertiary-fixed": "#2b1700", "tag-skipped-bg": "#ECEAF2", "on-primary-fixed-variant": "#422bb5", "text-primary-light": "#2A2440", "text-primary-dark": "#F1EEFA", "tag-alias-text": "#0F6A48", "tertiary-fixed": "#ffddba", "on-background": "#1d1733", "tag-semantic-bg": "#D4E6FF", "on-secondary": "#ffffff", "primary-fixed": "#e4dfff", "surface-container-lowest": "#ffffff", "canvas-light": "#F3F0FA", "icon-bg-sky": "#E2EEFF", "destructive": "#B3261E", "tag-gap-bg": "#FFEDB8", "error-container": "#ffdad6", "text-placeholder": "#9A93B3", "on-surface": "#1d1733", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "outline-variant": "#c8c4d6", "on-secondary-fixed": "#160066", "tertiary-fixed-dim": "#ffb865", "icon-bg-lavender": "#E9E4FF", "primary": "#5845cb", "tag-gap-text": "#7A5300", "on-surface-variant": "#474554" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-xl": "18px", "space-xs": "4px", "margin": "20px", "gutter": "12px", "space-md": "12px", "space-sm": "8px", "space-lg": "16px" }, fontFamily: { "caption-sm": ["Nunito Sans"], "body-md": ["Nunito Sans"], "display-lg": ["Nunito Sans"], "title-md": ["Nunito Sans"], "label-md": ["Nunito Sans"] }, fontSize: { "caption-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "display-lg": ["28px", { lineHeight: "34px", fontWeight: "800" }], "title-md": ["20px", { lineHeight: "26px", fontWeight: "700" }], "label-md": ["13px", { lineHeight: "18px", fontWeight: "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-canvas-light text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-canvas-light/80 backdrop-blur-xl"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><button aria-label="Close" class="clay-circle-btn w-11 h-11 rounded-full flex items-center justify-center transition-transform active:scale-95" onclick="history.back()" type="button"><span class="material-symbols-outlined text-text-primary-light text-[22px]">close</span></button><h1 class="font-title-md text-title-md text-text-primary-light">Upgrade Plan</h1></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full px-margin pt-16 pb-safe bg-canvas-light"><div class="flex flex-col w-full pb-10 space-y-6">
+<!-- Status Feedback Stack -->
+<div class="flex flex-col space-y-3">
+<!-- Mint Status Card: Autofill Enabled -->
+<div class="w-full rounded-[28px] p-[18px] bg-gradient-to-b from-[#EDFBF4] to-[#E3F7EE] shadow-[12px_12px_24px_rgba(15,106,72,0.12),-8px_-8px_18px_rgba(255,255,255,0.9)] flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 shrink-0 rounded-full bg-icon-bg-mint flex items-center justify-center shadow-[inset_2px_2px_4px_rgba(255,255,255,0.8),inset_-2px_-2px_4px_rgba(15,106,72,0.15)]">
+<span class="material-symbols-outlined text-tag-alias-text text-[22px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-tag-alias-text font-bold leading-tight">Android service ready</span>
+<span class="font-caption-sm text-caption-sm text-tag-alias-text/80 truncate">Fillmate is active as system provider</span>
+</div>
+</div>
+<span class="shrink-0 px-3 py-1 rounded-full bg-tag-alias-bg text-tag-alias-text font-label-md text-caption-sm shadow-[inset_1px_1px_2px_rgba(255,255,255,0.7),inset_-1px_-1px_2px_rgba(15,106,72,0.1)]">Active</span>
+</div>
+<!-- Butter Status Card: Chrome Pending Verification -->
+<div class="w-full rounded-[28px] p-[18px] bg-gradient-to-b from-[#FFF9E8] to-[#FFF2D0] shadow-[12px_12px_24px_rgba(122,83,0,0.10),-8px_-8px_18px_rgba(255,255,255,0.9)] flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 shrink-0 rounded-full bg-[#FFE89E] flex items-center justify-center shadow-[inset_2px_2px_4px_rgba(255,255,255,0.8),inset_-2px_-2px_4px_rgba(122,83,0,0.15)]">
+<span class="material-symbols-outlined text-tag-gap-text text-[22px]" style="font-variation-settings: 'FILL' 1;">sync</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-tag-gap-text font-bold leading-tight">Chrome: not verified yet</span>
+<span class="font-caption-sm text-caption-sm text-tag-gap-text/80 truncate">Follow the 4 steps below to connect</span>
+</div>
+</div>
+<span class="shrink-0 px-3 py-1 rounded-full bg-[#FFE398] text-tag-gap-text font-label-md text-caption-sm shadow-[inset_1px_1px_2px_rgba(255,255,255,0.7),inset_-1px_-1px_2px_rgba(122,83,0,0.1)]">Pending</span>
+</div>
+</div>
+<!-- Section: Stepper Guide -->
+<div class="flex flex-col space-y-4">
+<div class="flex items-center justify-between px-1">
+<h2 class="font-title-md text-title-md text-text-primary-light">Set Chrome to use Fillmate</h2>
+<span class="font-label-md text-label-md text-text-secondary-light">4 simple steps</span>
+</div>
+<div class="flex flex-col space-y-3">
+<!-- Step 1 -->
+<div class="w-full rounded-[28px] p-[18px] bg-gradient-to-b from-[#FFFFFF] to-[#FAF8FF] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.9)] flex flex-col space-y-3">
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 shrink-0 rounded-full bg-icon-bg-lavender text-tag-ai-text flex items-center justify-center font-title-md text-[15px] shadow-[inset_2px_2px_4px_rgba(255,255,255,0.9),inset_-2px_-2px_4px_rgba(110,90,180,0.15)]">1</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-[17px] text-text-primary-light leading-snug">Open Chrome Settings</h3>
+<p class="font-body-md text-[14px] text-text-secondary-light leading-relaxed mt-0.5">Tap Chrome's three-dot menu (<span class="font-bold text-text-primary-light">⋮</span>) in the top-right corner, then tap <strong class="font-bold text-text-primary-light">Settings</strong>.</p>
+</div>
+</div>
+<!-- Mini Mock Preview: Chrome Address & Menu -->
+<div class="w-full rounded-[18px] p-3 bg-canvas-light shadow-[inset_3px_3px_6px_rgba(110,90,180,0.14),inset_-3px_-3px_6px_rgba(255,255,255,0.7)] flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-text-secondary-light text-[18px]">lock</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light truncate">google.com</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<div class="px-2 py-0.5 rounded-full bg-surface-container-highest text-tag-ai-text font-label-md text-[11px]">Settings</div>
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-text-primary-light font-bold text-[13px]">⋮</div>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="w-full rounded-[28px] p-[18px] bg-gradient-to-b from-[#FFFFFF] to-[#FAF8FF] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.9)] flex flex-col space-y-3">
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 shrink-0 rounded-full bg-icon-bg-lavender text-tag-ai-text flex items-center justify-center font-title-md text-[15px] shadow-[inset_2px_2px_4px_rgba(255,255,255,0.9),inset_-2px_-2px_4px_rgba(110,90,180,0.15)]">2</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-[17px] text-text-primary-light leading-snug">Autofill services</h3>
+<p class="font-body-md text-[14px] text-text-secondary-light leading-relaxed mt-0.5">Scroll through settings and select <strong class="font-bold text-text-primary-light">Autofill services</strong> (or Autofill options).</p>
+</div>
+</div>
+<!-- Mini Mock Preview: Settings Row -->
+<div class="w-full rounded-[18px] p-3 bg-canvas-light shadow-[inset_3px_3px_6px_rgba(110,90,180,0.14),inset_-3px_-3px_6px_rgba(255,255,255,0.7)] flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">edit_note</span>
+<span class="font-label-md text-[13px] text-text-primary-light font-bold">Autofill services</span>
+</div>
+<span class="material-symbols-outlined text-text-secondary-light text-[18px]">chevron_right</span>
+</div>
+</div>
+<!-- Step 3 (Highlighted) -->
+<div class="w-full rounded-[28px] p-[18px] bg-gradient-to-b from-[#FFFFFF] to-[#FAF8FF] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.9)] flex flex-col space-y-3">
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 shrink-0 rounded-full bg-icon-bg-mint text-tag-alias-text flex items-center justify-center font-title-md text-[15px] shadow-[inset_2px_2px_4px_rgba(255,255,255,0.9),inset_-2px_-2px_4px_rgba(15,106,72,0.15)]">3</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-title-md text-[17px] text-text-primary-light leading-snug">Autofill using another service</h3>
+</div>
+<p class="font-body-md text-[14px] text-text-secondary-light leading-relaxed mt-0.5">Select <strong class="font-bold text-text-primary-light">“Autofill using another service”</strong>, then select Fillmate in the prompt.</p>
+</div>
+</div>
+<!-- Mini Mock Preview: Radio selection -->
+<div class="w-full rounded-[18px] p-3 bg-canvas-light shadow-[inset_3px_3px_6px_rgba(110,90,180,0.14),inset_-3px_-3px_6px_rgba(255,255,255,0.7)] flex flex-col space-y-2">
+<div class="flex items-center justify-between opacity-60">
+<span class="font-body-md text-[13px] text-text-secondary-light">Google autofill</span>
+<div class="w-4 h-4 rounded-full bg-outline-variant"></div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-[14px] bg-gradient-to-b from-[#FFFFFF] to-[#FAF8FF] shadow-[4px_4px_8px_rgba(110,90,180,0.12),-3px_-3px_6px_rgba(255,255,255,0.8)]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-md text-[13px] text-text-primary-light font-bold">Autofill using another service</span>
+</div>
+<div class="w-4 h-4 rounded-full bg-primary flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-on-primary"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="w-full rounded-[28px] p-[18px] bg-gradient-to-b from-[#FFFFFF] to-[#FAF8FF] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.9)] flex flex-col space-y-2">
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 shrink-0 rounded-full bg-icon-bg-lavender text-tag-ai-text flex items-center justify-center font-title-md text-[15px] shadow-[inset_2px_2px_4px_rgba(255,255,255,0.9),inset_-2px_-2px_4px_rgba(110,90,180,0.15)]">4</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-[17px] text-text-primary-light leading-snug">Restart Chrome</h3>
+<p class="font-body-md text-[14px] text-text-secondary-light leading-relaxed mt-0.5">Swipe Chrome away from your Recent Apps carousel and relaunch it so settings lock in.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Check It Works -->
+<div class="flex flex-col space-y-4">
+<h2 class="font-title-md text-title-md text-text-primary-light px-1">Check it works</h2>
+<div class="w-full rounded-[28px] p-[18px] bg-gradient-to-b from-[#FFFFFF] to-[#FAF8FF] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.9)] flex flex-col space-y-4">
+<p class="font-body-md text-body-md text-text-secondary-light">Open the sample form and tap the Email field. You should see your email suggestion gently slide up.</p>
+<!-- Interactive Mock Form Input with Floating Suggestion Chip -->
+<div class="relative pt-4 pb-2">
+<!-- Floating Pill Suggestion -->
+<div class="absolute -top-1 left-4 z-10 px-3.5 py-1.5 rounded-full bg-gradient-to-b from-[#FFFFFF] to-[#F2EBFF] shadow-[6px_6px_14px_rgba(110,90,180,0.22),-4px_-4px_10px_rgba(255,255,255,0.95),inset_2px_2px_4px_rgba(255,255,255,0.9)] flex items-center gap-1.5 transition-transform active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[15px]" style="font-variation-settings: 'FILL' 1;">mail</span>
+<span class="font-label-md text-[12px] text-text-primary-light font-bold">aarav@example.com</span>
+</div>
+<!-- Recessed Mini Input Well -->
+<div class="w-full h-14 rounded-[20px] px-4 bg-canvas-light shadow-[inset_4px_4px_8px_rgba(110,90,180,0.16),inset_-4px_-4px_8px_rgba(255,255,255,0.7)] flex items-center justify-between">
+<span class="font-body-md text-[14px] text-text-placeholder">Work Email Address</span>
+<span class="material-symbols-outlined text-text-placeholder text-[20px]">alternate_email</span>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full h-14 rounded-[28px] bg-primary text-on-primary font-title-md text-[16px] shadow-[8px_8px_18px_rgba(88,69,203,0.35),-4px_-4px_12px_rgba(255,255,255,0.8),inset_0_2px_4px_rgba(255,255,255,0.6),inset_0_-2px_4px_rgba(0,0,0,0.15)] flex items-center justify-center gap-2 transition-transform active:scale-[0.98]" type="button">
+<span>Open sample form</span>
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Section: Troubleshooting Accordions -->
+<div class="flex flex-col space-y-3">
+<h2 class="font-title-md text-title-md text-text-primary-light px-1">Not seeing suggestions?</h2>
+<!-- Accordion 1 -->
+<details class="group w-full rounded-[24px] bg-gradient-to-b from-[#FFFFFF] to-[#FAF8FF] shadow-[10px_10px_20px_rgba(110,90,180,0.14),-6px_-6px_14px_rgba(255,255,255,0.9)] overflow-hidden">
+<summary class="list-none cursor-pointer p-[18px] flex items-center justify-between gap-space-md select-none">
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-[15px] text-text-primary-light font-bold">Chrome option missing</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light mt-0.5">Requires Chrome v123 or higher on Android 14+</span>
+</div>
+<div class="w-8 h-8 shrink-0 rounded-full bg-canvas-light shadow-[inset_2px_2px_4px_rgba(110,90,180,0.12),inset_-2px_-2px_4px_rgba(255,255,255,0.7)] flex items-center justify-center transition-transform group-open:rotate-180">
+<span class="material-symbols-outlined text-text-secondary-light text-[20px]">expand_more</span>
+</div>
+</summary>
+<div class="px-[18px] pb-[18px] pt-1">
+<div class="p-3.5 rounded-[16px] bg-canvas-light shadow-[inset_3px_3px_6px_rgba(110,90,180,0.12),inset_-3px_-3px_6px_rgba(255,255,255,0.7)] text-text-secondary-light font-body-md text-[13px] leading-relaxed">
+          Update Google Chrome via Play Store. If Android autofill toggles are still absent, enable the Chrome experimental flag at <code class="px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-bold">chrome://flags#android-autofill-support</code>.
+        </div>
+</div>
+</details>
+<!-- Accordion 2 -->
+<details class="group w-full rounded-[24px] bg-gradient-to-b from-[#FFFFFF] to-[#FAF8FF] shadow-[10px_10px_20px_rgba(110,90,180,0.14),-6px_-6px_14px_rgba(255,255,255,0.9)] overflow-hidden">
+<summary class="list-none cursor-pointer p-[18px] flex items-center justify-between gap-space-md select-none">
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-[15px] text-text-primary-light font-bold">Suggestions show Google's autofill</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light mt-0.5">Disable Google autofill in Chrome passwords</span>
+</div>
+<div class="w-8 h-8 shrink-0 rounded-full bg-canvas-light shadow-[inset_2px_2px_4px_rgba(110,90,180,0.12),inset_-2px_-2px_4px_rgba(255,255,255,0.7)] flex items-center justify-center transition-transform group-open:rotate-180">
+<span class="material-symbols-outlined text-text-secondary-light text-[20px]">expand_more</span>
+</div>
+</summary>
+<div class="px-[18px] pb-[18px] pt-1">
+<div class="p-3.5 rounded-[16px] bg-canvas-light shadow-[inset_3px_3px_6px_rgba(110,90,180,0.12),inset_-3px_-3px_6px_rgba(255,255,255,0.7)] text-text-secondary-light font-body-md text-[13px] leading-relaxed">
+          Open Chrome Settings → Google Password Manager → Settings gear. Toggle off “Auto sign-in” to allow Fillmate's intelligent job application parser priority over cached credentials.
+        </div>
+</div>
+</details>
+<!-- Accordion 3 -->
+<details class="group w-full rounded-[24px] bg-gradient-to-b from-[#FFFFFF] to-[#FAF8FF] shadow-[10px_10px_20px_rgba(110,90,180,0.14),-6px_-6px_14px_rgba(255,255,255,0.9)] overflow-hidden">
+<summary class="list-none cursor-pointer p-[18px] flex items-center justify-between gap-space-md select-none">
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-[15px] text-text-primary-light font-bold">Nothing appears on some sites</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light mt-0.5">Webforms that mask standard HTML inputs</span>
+</div>
+<div class="w-8 h-8 shrink-0 rounded-full bg-canvas-light shadow-[inset_2px_2px_4px_rgba(110,90,180,0.12),inset_-2px_-2px_4px_rgba(255,255,255,0.7)] flex items-center justify-center transition-transform group-open:rotate-180">
+<span class="material-symbols-outlined text-text-secondary-light text-[20px]">expand_more</span>
+</div>
+</summary>
+<div class="px-[18px] pb-[18px] pt-1">
+<div class="p-3.5 rounded-[16px] bg-canvas-light shadow-[inset_3px_3px_6px_rgba(110,90,180,0.12),inset_-3px_-3px_6px_rgba(255,255,255,0.7)] text-text-secondary-light font-body-md text-[13px] leading-relaxed">
+          Custom portals (like Workday iframes) sometimes obscure input tags. Swipe down your Android Quick Settings shade and tap the <strong class="text-text-primary-light font-bold">Fillmate Floating Bar</strong> tile to force manual field detection.
+        </div>
+</div>
+</details>
+</div>
+</div></main></body></html>

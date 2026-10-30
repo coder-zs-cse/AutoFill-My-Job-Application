@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- The system binds to this; only the OS may (BIND_AUTOFILL_SERVICE). -->
+        <service
+            android:name="ai.fillmate.autofill.service.FillmateAutofillService"
+            android:label="@string/fillmate_autofill_label"
+            android:permission="android.permission.BIND_AUTOFILL_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.autofill.AutofillService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.autofill"
+                android:resource="@xml/autofill_service" />
+        </service>
+
+        <!-- Launched through Dataset authentication (IntentSender) over Chrome. -->
+        <activity
+            android:name="ai.fillmate.autofill.actions.ai.AiAnswerActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="ai.fillmate.autofill.actions.later.SaveForLaterActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+</manifest>

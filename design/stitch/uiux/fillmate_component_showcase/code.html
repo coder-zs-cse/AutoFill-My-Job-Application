@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#F3F0FA;}body{overscroll-behavior:none;font-family:'Nunito Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed": "#e4dfff", "primary-container": "#7160e6", "on-secondary-fixed-variant": "#3f2aba", "primary": "#5845cb", "tertiary": "#845000", "background": "#fdf7ff", "surface-container-low": "#f8f1ff", "surface-container": "#f2ebff", "outline-variant": "#c8c4d6", "error-container": "#ffdad6", "tag-gap-text": "#7A5300", "icon-bg-sky": "#E2EEFF", "on-secondary-container": "#fffbff", "icon-bg-peach": "#FFE8DC", "on-surface-variant": "#474554", "on-primary-container": "#fffbff", "on-tertiary-fixed-variant": "#673d00", "text-secondary-dark": "#B3ACCB", "inverse-on-surface": "#f5eeff", "inverse-surface": "#322c49", "outline": "#787585", "tertiary-fixed": "#ffddba", "on-tertiary": "#ffffff", "surface-container-high": "#ede4ff", "tag-ai-text": "#5B3BB8", "icon-bg-mint": "#DDF7EC", "tertiary-container": "#a66600", "surface-container-lowest": "#ffffff", "text-secondary-light": "#6B6485", "destructive": "#B3261E", "text-primary-light": "#2A2440", "canvas-dark": "#1B1828", "inverse-primary": "#c7bfff", "tertiary-fixed-dim": "#ffb865", "tag-alias-text": "#0F6A48", "primary-fixed-dim": "#c7bfff", "canvas-light": "#F3F0FA", "tag-error-bg": "#FFD9D4", "tag-skipped-text": "#5E5874", "on-secondary-fixed": "#160066", "tag-semantic-text": "#1C4F94", "secondary-container": "#6e60ea", "on-error-container": "#93000a", "on-background": "#1d1733", "on-tertiary-container": "#fffbff", "on-secondary": "#ffffff", "secondary-fixed": "#e4dfff", "on-error": "#ffffff", "surface-variant": "#e7deff", "surface-dim": "#dfd5fa", "on-surface": "#1d1733", "secondary-fixed-dim": "#c6bfff", "on-tertiary-fixed": "#2b1700", "text-placeholder": "#9A93B3", "on-primary-fixed-variant": "#422bb5", "surface-tint": "#5a48ce", "tag-alias-bg": "#C9F2E1", "error": "#ba1a1a", "text-primary-dark": "#F1EEFA", "surface": "#fdf7ff", "surface-bright": "#fdf7ff", "on-primary": "#ffffff", "tag-error-text": "#9A2A1E", "secondary": "#5544d0", "icon-bg-lavender": "#E9E4FF", "on-primary-fixed": "#170065", "tag-semantic-bg": "#D4E6FF", "tag-gap-bg": "#FFEDB8", "surface-container-highest": "#e7deff", "tag-skipped-bg": "#ECEAF2" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter": "12px", "space-md": "12px", "space-xs": "4px", "space-xl": "18px", "space-sm": "8px", "margin": "20px", "space-lg": "16px" }, fontFamily: { "title-md": ["Nunito Sans"], "display-lg": ["Nunito Sans"], "body-md": ["Nunito Sans"], "label-md": ["Nunito Sans"], "caption-sm": ["Nunito Sans"] }, fontSize: { "title-md": ["20px", { lineHeight: "26px", fontWeight: "700" }], "display-lg": ["28px", { lineHeight: "34px", fontWeight: "800" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "label-md": ["13px", { lineHeight: "18px", fontWeight: "600" }], "caption-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-canvas-light text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-canvas-light/80 backdrop-blur-xl"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><button aria-label="Go back" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface bg-surface-container-lowest/60 shadow-[4px_4px_10px_rgba(110,90,180,0.10),-4px_-4px_10px_rgba(255,255,255,0.85)] active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-text-primary-light">Component Showcase</h1></div><div class="flex items-center gap-space-sm"><button aria-label="More Options" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface bg-surface-container-lowest/60 shadow-[4px_4px_10px_rgba(110,90,180,0.10),-4px_-4px_10px_rgba(255,255,255,0.85)] active:scale-95 transition-all"><span class="material-symbols-outlined text-[20px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[2px_2px_6px_rgba(110,90,180,0.25)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe px-margin bg-canvas-light"><div class="flex flex-col w-full pb-24 max-w-[480px] mx-auto space-y-8">
+<div class="flex flex-col space-y-1">
+<div class="inline-flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary shadow-[0_0_8px_rgba(88,69,203,0.5)]"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-text-secondary-light">Design System Anchor</span>
+</div>
+<h2 class="font-display-lg text-display-lg text-text-primary-light">Fillmate components</h2>
+<p class="font-label-md text-label-md text-text-secondary-light">Tactile Claymorphism System • M3 Spec</p>
+</div>
+<section class="flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-text-secondary-light">01 Buttons &amp; Affordances</h3>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light">56px Pill Matrix</span>
+</div>
+<div class="flex flex-col space-y-3">
+<button class="w-full h-14 rounded-full bg-[#7C6CF2] text-on-primary font-title-md text-body-md flex items-center justify-center gap-2 shadow-[12px_12px_24px_rgba(110,90,180,0.22),-6px_-6px_16px_rgba(255,255,255,0.9),inset_0_2px_4px_rgba(255,255,255,0.6)] active:scale-[0.98] transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+        Add question
+      </button>
+<button class="w-full h-14 rounded-full bg-gradient-to-b from-surface-container-lowest to-[#FAF8FF] text-primary font-title-md text-body-md flex items-center justify-center shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.9),inset_-4px_-4px_8px_rgba(110,90,180,0.10),inset_4px_4px_8px_rgba(255,255,255,0.8)] active:scale-[0.98] transition-all cursor-pointer">
+        Cancel
+      </button>
+<div class="grid grid-cols-2 gap-3">
+<button class="h-14 rounded-full bg-[#6957E0] text-on-primary font-title-md text-body-md flex items-center justify-center shadow-[inset_3px_3px_6px_rgba(30,18,80,0.4),inset_-3px_-3px_6px_rgba(255,255,255,0.2),2px_2px_6px_rgba(110,90,180,0.12)] cursor-pointer">
+<span class="flex items-center gap-1.5 opacity-90">
+<span class="material-symbols-outlined text-[18px]">touch_app</span>
+            Pressed
+          </span>
+</button>
+<button class="h-14 rounded-full bg-transparent text-primary font-title-md text-body-md flex items-center justify-center hover:bg-surface-variant/40 active:scale-[0.98] transition-all cursor-pointer">
+          Skip
+        </button>
+</div>
+</div>
+</section>
+<section class="flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-text-secondary-light">02 Inputs (Carved Cavities)</h3>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light">Concave 20px Radius</span>
+</div>
+<div class="flex flex-col space-y-4">
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-text-primary-light flex items-center justify-between">
+<span>Username</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light">Default</span>
+</label>
+<div class="h-14 w-full rounded-[20px] bg-canvas-light px-4 flex items-center shadow-[inset_4px_4px_8px_rgba(110,90,180,0.16),inset_-4px_-4px_8px_rgba(255,255,255,0.85)]">
+<input class="w-full bg-transparent font-body-md text-body-md text-text-primary-light placeholder:text-text-placeholder focus:outline-none" placeholder="Enter username..." type="text"/>
+<span class="material-symbols-outlined text-text-placeholder text-[20px]">alternate_email</span>
+</div>
+</div>
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-text-primary-light flex items-center justify-between">
+<span>Active User</span>
+<span class="font-caption-sm text-caption-sm text-tag-alias-text flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Validated
+          </span>
+</label>
+<div class="h-14 w-full rounded-[20px] bg-canvas-light px-4 flex items-center justify-between shadow-[inset_4px_4px_8px_rgba(110,90,180,0.16),inset_-4px_-4px_8px_rgba(255,255,255,0.85)]">
+<span class="font-body-md text-body-md text-text-primary-light">aarav.m</span>
+<div class="w-7 h-7 rounded-full bg-tag-alias-bg flex items-center justify-center text-tag-alias-text">
+<span class="material-symbols-outlined text-[16px]">done</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-tag-error-text flex items-center justify-between">
+<span>Profile Handle</span>
+<span class="font-caption-sm text-caption-sm text-tag-error-text">Collision</span>
+</label>
+<div class="h-14 w-full rounded-[20px] bg-[#FFF2F0] px-4 flex items-center justify-between shadow-[inset_4px_4px_8px_rgba(186,26,26,0.18),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]">
+<span class="font-body-md text-body-md text-tag-error-text">aarav.m</span>
+<span class="material-symbols-outlined text-tag-error-text text-[20px]">error</span>
+</div>
+<p class="font-caption-sm text-caption-sm text-tag-error-text pl-2 flex items-center gap-1">
+          Username already taken. Try an alias instead.
+        </p>
+</div>
+</div>
+</section>
+<section class="flex flex-col space-y-3">
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-text-secondary-light">03 Method Tags</h3>
+<div class="flex flex-wrap gap-2">
+<div class="h-6 px-2.5 rounded-full bg-tag-alias-bg text-tag-alias-text flex items-center gap-1 shadow-[2px_2px_4px_rgba(110,90,180,0.08)]">
+<span class="material-symbols-outlined text-[13px]">link</span>
+<span class="font-caption-sm text-caption-sm font-semibold">Alias</span>
+</div>
+<div class="h-6 px-2.5 rounded-full bg-tag-semantic-bg text-tag-semantic-text flex items-center gap-1 shadow-[2px_2px_4px_rgba(110,90,180,0.08)]">
+<span class="material-symbols-outlined text-[13px]">waves</span>
+<span class="font-caption-sm text-caption-sm font-semibold">Semantic</span>
+</div>
+<div class="h-6 px-2.5 rounded-full bg-gradient-to-r from-[#E6DCFF] to-[#FFE3D3] text-tag-ai-text flex items-center gap-1 shadow-[2px_2px_4px_rgba(110,90,180,0.08)]">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-caption-sm text-caption-sm font-semibold">AI Match</span>
+</div>
+<div class="h-6 px-2.5 rounded-full bg-tag-skipped-bg text-tag-skipped-text flex items-center gap-1 shadow-[2px_2px_4px_rgba(110,90,180,0.08)]">
+<span class="material-symbols-outlined text-[13px]">redo</span>
+<span class="font-caption-sm text-caption-sm font-semibold">Skipped</span>
+</div>
+<div class="h-6 px-2.5 rounded-full bg-tag-gap-bg text-tag-gap-text flex items-center gap-1 shadow-[2px_2px_4px_rgba(110,90,180,0.08)]">
+<span class="material-symbols-outlined text-[13px]">flag</span>
+<span class="font-caption-sm text-caption-sm font-semibold">Needs info</span>
+</div>
+<div class="h-6 px-2.5 rounded-full bg-tag-error-bg text-tag-error-text flex items-center gap-1 shadow-[2px_2px_4px_rgba(110,90,180,0.08)]">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+<span class="font-caption-sm text-caption-sm font-semibold">Error</span>
+</div>
+</div>
+</section>
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-text-secondary-light">04 Alias Clay Chips</h3>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light">Interactive</span>
+</div>
+<div class="flex flex-wrap gap-2.5 items-center">
+<div class="h-8 px-3.5 rounded-full bg-gradient-to-b from-surface-container-lowest to-[#FAF8FF] text-text-primary-light flex items-center gap-1.5 shadow-[6px_6px_14px_rgba(110,90,180,0.12),-4px_-4px_10px_rgba(255,255,255,0.9),inset_-2px_-2px_4px_rgba(110,90,180,0.08),inset_2px_2px_4px_rgba(255,255,255,0.7)] cursor-pointer active:scale-95 transition-all">
+<span class="font-caption-sm text-caption-sm font-semibold lowercase">current ctc</span>
+<span class="material-symbols-outlined text-[14px] text-text-secondary-light hover:text-text-primary-light">close</span>
+</div>
+<div class="h-8 px-3.5 rounded-full bg-gradient-to-b from-surface-container-lowest to-[#FAF8FF] text-text-primary-light flex items-center gap-1.5 shadow-[6px_6px_14px_rgba(110,90,180,0.12),-4px_-4px_10px_rgba(255,255,255,0.9),inset_-2px_-2px_4px_rgba(110,90,180,0.08),inset_2px_2px_4px_rgba(255,255,255,0.7)] cursor-pointer active:scale-95 transition-all">
+<span class="font-caption-sm text-caption-sm font-semibold lowercase">present salary</span>
+<span class="material-symbols-outlined text-[14px] text-text-secondary-light hover:text-text-primary-light">close</span>
+</div>
+<div class="h-8 px-3.5 rounded-full bg-gradient-to-b from-surface-container-lowest to-[#FAF8FF] text-text-primary-light flex items-center gap-1.5 shadow-[6px_6px_14px_rgba(110,90,180,0.12),-4px_-4px_10px_rgba(255,255,255,0.9),inset_-2px_-2px_4px_rgba(110,90,180,0.08),inset_2px_2px_4px_rgba(255,255,255,0.7)] cursor-pointer active:scale-95 transition-all">
+<span class="font-caption-sm text-caption-sm font-semibold lowercase">ctc (current)</span>
+<span class="material-symbols-outlined text-[14px] text-text-secondary-light hover:text-text-primary-light">close</span>
+</div>
+<button class="h-8 px-3 rounded-full bg-surface-container/60 text-primary flex items-center gap-1 shadow-[inset_2px_2px_4px_rgba(110,90,180,0.12),inset_-2px_-2px_4px_rgba(255,255,255,0.8)] active:scale-95 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[15px]">add</span>
+<span class="font-caption-sm text-caption-sm font-bold">Add alias</span>
+</button>
+</div>
+</section>
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-text-secondary-light">05 Volumetric Question Card</h3>
+<span class="font-caption-sm text-caption-sm text-primary font-bold">Preview</span>
+</div>
+<div class="w-full rounded-[28px] p-[18px] bg-gradient-to-b from-surface-container-lowest to-[#FAF8FF] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.9),inset_-4px_-4px_8px_rgba(110,90,180,0.10),inset_4px_4px_8px_rgba(255,255,255,0.8)] flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<div class="h-6 px-3 rounded-full bg-icon-bg-lavender text-primary flex items-center gap-1 shadow-[inset_1px_1px_2px_rgba(255,255,255,0.8)]">
+<span class="material-symbols-outlined text-[12px]">payments</span>
+<span class="font-caption-sm text-caption-sm uppercase tracking-wider font-extrabold">Compensation</span>
+</div>
+<div class="h-6 px-2.5 rounded-full bg-tag-alias-bg text-tag-alias-text flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check</span>
+<span class="font-caption-sm text-caption-sm font-semibold">Synced</span>
+</div>
+</div>
+<div class="flex flex-col space-y-1">
+<span class="font-label-md text-label-md text-text-secondary-light">Field Anchor</span>
+<h4 class="font-title-md text-title-md text-text-primary-light">Current CTC</h4>
+</div>
+<div class="w-full rounded-[20px] p-3.5 bg-canvas-light shadow-[inset_4px_4px_8px_rgba(110,90,180,0.14),inset_-4px_-4px_8px_rgba(255,255,255,0.85)] flex items-center justify-between">
+<span class="font-display-lg text-display-lg text-primary font-extrabold">18 LPA</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light bg-surface-container-lowest/80 px-2.5 py-1 rounded-full shadow-[2px_2px_4px_rgba(110,90,180,0.06)]">INR Fixed</span>
+</div>
+<div class="flex flex-col space-y-2">
+<span class="font-caption-sm text-caption-sm text-text-secondary-light">Auto-fills matching prompts:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="h-7 px-2.5 rounded-full bg-surface-container-lowest text-text-primary-light font-caption-sm text-caption-sm flex items-center shadow-[4px_4px_8px_rgba(110,90,180,0.08)]">current ctc</span>
+<span class="h-7 px-2.5 rounded-full bg-surface-container-lowest text-text-primary-light font-caption-sm text-caption-sm flex items-center shadow-[4px_4px_8px_rgba(110,90,180,0.08)]">present salary</span>
+<span class="h-7 px-2.5 rounded-full bg-surface-container-lowest text-text-primary-light font-caption-sm text-caption-sm flex items-center shadow-[4px_4px_8px_rgba(110,90,180,0.08)]">fixed pay</span>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col space-y-3">
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-text-secondary-light">06 List Row Element</h3>
+<div class="w-full h-20 rounded-[28px] px-[18px] bg-gradient-to-b from-surface-container-lowest to-[#FAF8FF] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.9),inset_-4px_-4px_8px_rgba(110,90,180,0.10),inset_4px_4px_8px_rgba(255,255,255,0.8)] flex items-center justify-between cursor-pointer active:scale-[0.99] transition-all">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-10 h-10 rounded-full bg-icon-bg-mint flex items-center justify-center shrink-0 shadow-[4px_4px_10px_rgba(110,90,180,0.12),-2px_-2px_6px_rgba(255,255,255,0.9)]">
+<span class="material-symbols-outlined text-[#0F6A48] text-[20px]" style="font-variation-settings: 'FILL' 1;">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-body-md text-text-primary-light font-semibold truncate">docs.google.com</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light">Today, 10:42 AM • Synced source</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-text-secondary-light shadow-[3px_3px_6px_rgba(110,90,180,0.08),-2px_-2px_6px_rgba(255,255,255,0.8)]">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</div>
+</div>
+</section>
+<section class="flex flex-col space-y-4">
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-text-secondary-light">07 Interactive Controls</h3>
+<div class="h-14 w-full p-1.5 rounded-full bg-canvas-light shadow-[inset_4px_4px_8px_rgba(110,90,180,0.16),inset_-4px_-4px_8px_rgba(255,255,255,0.85)] flex items-center">
+<button class="flex-1 h-full rounded-full bg-gradient-to-b from-surface-container-lowest to-[#FAF8FF] font-label-md text-label-md text-primary font-bold flex items-center justify-center shadow-[6px_6px_12px_rgba(110,90,180,0.14),-4px_-4px_10px_rgba(255,255,255,0.9),inset_-2px_-2px_4px_rgba(110,90,180,0.08),inset_2px_2px_4px_rgba(255,255,255,0.8)]">
+        Questions
+      </button>
+<button class="flex-1 h-full rounded-full bg-transparent font-label-md text-label-md text-text-secondary-light font-semibold flex items-center justify-center">
+        Stories &amp; Prefs
+      </button>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="p-3.5 rounded-[24px] bg-gradient-to-b from-surface-container-lowest to-[#FAF8FF] shadow-[8px_8px_18px_rgba(110,90,180,0.12),-6px_-6px_14px_rgba(255,255,255,0.85)] flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary-light">Auto-fill</span>
+<span class="font-caption-sm text-caption-sm text-tag-alias-text font-bold">Enabled</span>
+</div>
+<div class="w-14 h-8 rounded-full bg-[#7C6CF2] p-1 flex items-center justify-end shadow-[inset_2px_2px_4px_rgba(30,18,80,0.3),inset_-2px_-2px_4px_rgba(255,255,255,0.4)] cursor-pointer">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest shadow-[3px_3px_6px_rgba(30,18,80,0.25)] flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-[#7C6CF2]"></span>
+</div>
+</div>
+</div>
+<div class="p-3.5 rounded-[24px] bg-gradient-to-b from-surface-container-lowest to-[#FAF8FF] shadow-[8px_8px_18px_rgba(110,90,180,0.12),-6px_-6px_14px_rgba(255,255,255,0.85)] flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary-light">AI Parse</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light">Muted</span>
+</div>
+<div class="w-14 h-8 rounded-full bg-canvas-light p-1 flex items-center justify-start shadow-[inset_3px_3px_6px_rgba(110,90,180,0.18),inset_-3px_-3px_6px_rgba(255,255,255,0.8)] cursor-pointer">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest shadow-[2px_2px_5px_rgba(110,90,180,0.15)]"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-around p-3 rounded-[24px] bg-canvas-light shadow-[inset_3px_3px_6px_rgba(110,90,180,0.14),inset_-3px_-3px_6px_rgba(255,255,255,0.85)]">
+<div class="flex items-center gap-2.5 cursor-pointer">
+<div class="w-7 h-7 rounded-[10px] bg-[#7C6CF2] flex items-center justify-center shadow-[4px_4px_8px_rgba(110,90,180,0.25),inset_0_1px_2px_rgba(255,255,255,0.6)] text-on-primary">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="font-label-md text-label-md text-text-primary-light">Include perks</span>
+</div>
+<div class="w-[1px] h-6 bg-outline-variant/40"></div>
+<div class="flex items-center gap-2.5 cursor-pointer">
+<div class="w-7 h-7 rounded-[10px] bg-surface-container-lowest shadow-[inset_3px_3px_5px_rgba(110,90,180,0.15),inset_-2px_-2px_4px_rgba(255,255,255,0.9)]"></div>
+<span class="font-label-md text-label-md text-text-secondary-light">Strict regex</span>
+</div>
+</div>
+</section>
+<section class="flex flex-col space-y-3 pt-2">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-text-secondary-light">08 Floating Clay Navigation</h3>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light">32px Radius Pill</span>
+</div>
+<div class="w-full h-[72px] rounded-[32px] px-3 bg-gradient-to-b from-surface-container-lowest to-[#FAF8FF] shadow-[12px_12px_28px_rgba(110,90,180,0.20),-8px_-8px_18px_rgba(255,255,255,0.95),inset_-4px_-4px_8px_rgba(110,90,180,0.10),inset_4px_4px_8px_rgba(255,255,255,0.85)] flex items-center justify-around">
+<div class="h-12 px-3.5 rounded-full bg-primary-fixed flex items-center gap-1.5 shadow-[inset_2px_2px_4px_rgba(255,255,255,0.8),inset_-2px_-2px_4px_rgba(88,69,203,0.12),4px_4px_8px_rgba(110,90,180,0.1)] cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-label-md text-label-md text-primary font-bold">Knowledge</span>
+</div>
+<div class="flex flex-col items-center justify-center py-1 text-text-secondary-light hover:text-text-primary-light cursor-pointer">
+<span class="material-symbols-outlined text-[22px]">history</span>
+<span class="font-caption-sm text-caption-sm font-semibold">History</span>
+</div>
+<div class="flex flex-col items-center justify-center py-1 text-text-secondary-light hover:text-text-primary-light cursor-pointer relative">
+<div class="relative">
+<span class="material-symbols-outlined text-[22px]">inbox</span>
+<span class="absolute -top-1.5 -right-3 h-4 px-1.5 rounded-full bg-tag-gap-bg text-tag-gap-text font-caption-sm text-[10px] leading-4 font-bold flex items-center justify-center shadow-[1px_1px_3px_rgba(122,83,0,0.15)]">3</span>
+</div>
+<span class="font-caption-sm text-caption-sm font-semibold">Gaps</span>
+</div>
+<div class="flex flex-col items-center justify-center py-1 text-text-secondary-light hover:text-text-primary-light cursor-pointer">
+<span class="material-symbols-outlined text-[22px]">science</span>
+<span class="font-caption-sm text-caption-sm font-semibold">Playground</span>
+</div>
+</div>
+</section>
+</div></main></body></html>

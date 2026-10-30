@@ -1,0 +1,15 @@
+---
+description: Kotlin rules for the AutofillService, autofill-core and the RN bridge
+globs: apps/mobile/android/**/*.kt,apps/mobile/android/**/*.gradle,apps/mobile/android/**/*.xml
+alwaysApply: false
+---
+
+- Module direction: :app → :autofill → :autofill-core. `:autofill-core` must not import `android.*`.
+- `FillmateModule.kt` (bridge) only translates types/threads and calls `FillmateAutofill` (facade). No logic.
+- `FillmateAutofillService` stays thin; decisions go in `FillRequestHandler` and its collaborators.
+- Never call the LLM or block on network inside `onFillRequest` beyond the single Tier 2 call with timeout.
+- Always complete the FillCallback exactly once; on any error return `onSuccess(null)`.
+- Matching rules come from `rules.json` on the classpath. Never hardcode stopwords or qualifiers.
+- `ClayTokens.kt` is generated; edit `packages/design-tokens/tokens.json` instead.
+- Add Gradle dependencies only in the phase that needs them (`.claude/build-plan.md`); ask first.
+- Spec: `.claude/autofill-service.md`, `.claude/matching-pipeline.md`.

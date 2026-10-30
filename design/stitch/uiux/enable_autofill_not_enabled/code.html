@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#e7deff", "on-secondary": "#ffffff", "tag-semantic-text": "#1C4F94", "on-primary": "#ffffff", "on-secondary-fixed": "#160066", "inverse-on-surface": "#f5eeff", "inverse-primary": "#c7bfff", "primary-fixed": "#e4dfff", "surface-container": "#f2ebff", "on-tertiary-fixed-variant": "#673d00", "destructive": "#B3261E", "text-primary-dark": "#F1EEFA", "surface": "#fdf7ff", "on-surface-variant": "#474554", "secondary": "#5544d0", "text-primary-light": "#2A2440", "on-error": "#ffffff", "outline": "#787585", "canvas-dark": "#1B1828", "on-tertiary-fixed": "#2b1700", "tag-gap-bg": "#FFEDB8", "text-secondary-dark": "#B3ACCB", "tag-ai-text": "#5B3BB8", "background": "#fdf7ff", "icon-bg-peach": "#FFE8DC", "surface-container-high": "#ede4ff", "error": "#ba1a1a", "on-error-container": "#93000a", "text-secondary-light": "#6B6485", "tag-gap-text": "#7A5300", "icon-bg-lavender": "#E9E4FF", "icon-bg-sky": "#E2EEFF", "tag-error-bg": "#FFD9D4", "surface-dim": "#dfd5fa", "surface-tint": "#5a48ce", "outline-variant": "#c8c4d6", "tag-alias-bg": "#C9F2E1", "surface-container-highest": "#e7deff", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#c6bfff", "tertiary-fixed": "#ffddba", "tag-skipped-text": "#5E5874", "on-background": "#1d1733", "on-secondary-container": "#fffbff", "on-primary-fixed-variant": "#422bb5", "tertiary-container": "#a66600", "on-secondary-fixed-variant": "#3f2aba", "primary-fixed-dim": "#c7bfff", "text-placeholder": "#9A93B3", "tag-skipped-bg": "#ECEAF2", "canvas-light": "#F3F0FA", "on-surface": "#1d1733", "secondary-fixed": "#e4dfff", "tag-alias-text": "#0F6A48", "surface-container-lowest": "#ffffff", "tag-error-text": "#9A2A1E", "tertiary": "#845000", "inverse-surface": "#322c49", "icon-bg-mint": "#DDF7EC", "secondary-container": "#6e60ea", "on-primary-fixed": "#170065", "tag-semantic-bg": "#D4E6FF", "tertiary-fixed-dim": "#ffb865", "primary-container": "#7160e6", "error-container": "#ffdad6", "on-primary-container": "#fffbff", "on-tertiary-container": "#fffbff", "primary": "#5845cb", "surface-container-low": "#f8f1ff", "surface-bright": "#fdf7ff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xl": "18px", "space-sm": "8px", "space-lg": "16px", "space-md": "12px", "space-xs": "4px", "gutter": "12px", "margin": "20px" }, "fontFamily": { "caption-sm": ["Nunito Sans"], "display-lg": ["Nunito Sans"], "label-md": ["Nunito Sans"], "title-md": ["Nunito Sans"], "body-md": ["Nunito Sans"] }, "fontSize": { "caption-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-lg": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "600" }], "title-md": ["20px", { "lineHeight": "26px", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;font-family:'Nunito Sans',sans-serif;}body{overscroll-behavior:none;background-color:#F3F0FA;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-canvas-light text-on-surface antialiased flex flex-col min-h-screen"><main class="flex-1 flex flex-col relative w-full max-w-[480px] mx-auto bg-canvas-light pt-safe pb-safe"><div class="flex flex-col w-full px-5 pb-6">
+<!-- Top Navigation & Progress Row -->
+<div class="flex items-center justify-between pt-2 pb-4">
+<!-- Progress Indicator (5 tactile clay nodes) -->
+<div class="flex items-center space-x-2">
+<!-- Step 1 (Done/Inactive bead) -->
+<div class="w-2.5 h-2.5 rounded-full bg-surface-dim shadow-[inset_1px_1px_2px_rgba(255,255,255,0.8),inset_-1px_-1px_2px_rgba(110,90,180,0.2)]"></div>
+<!-- Step 2 (Done/Inactive bead) -->
+<div class="w-2.5 h-2.5 rounded-full bg-surface-dim shadow-[inset_1px_1px_2px_rgba(255,255,255,0.8),inset_-1px_-1px_2px_rgba(110,90,180,0.2)]"></div>
+<!-- Step 3 (Active inflated pill) -->
+<div class="w-7 h-2.5 rounded-full bg-primary shadow-[0_2px_6px_rgba(110,90,180,0.35),inset_0_1.5px_2px_rgba(255,255,255,0.7)] transition-all"></div>
+<!-- Step 4 (Future bead) -->
+<div class="w-2.5 h-2.5 rounded-full bg-surface-dim shadow-[inset_1px_1px_2px_rgba(255,255,255,0.8),inset_-1px_-1px_2px_rgba(110,90,180,0.2)]"></div>
+<!-- Step 5 (Future bead) -->
+<div class="w-2.5 h-2.5 rounded-full bg-surface-dim shadow-[inset_1px_1px_2px_rgba(255,255,255,0.8),inset_-1px_-1px_2px_rgba(110,90,180,0.2)]"></div>
+</div>
+<!-- Skip Text Button -->
+<button class="h-10 px-3 flex items-center justify-center font-label-md text-label-md text-secondary rounded-full active:scale-95 transition-transform" type="button">
+      Skip
+    </button>
+</div>
+<!-- Header Section -->
+<div class="flex flex-col mt-1 mb-4 text-left">
+<h1 class="font-display-lg text-display-lg text-text-primary-light tracking-tight">
+      Turn on autofill
+    </h1>
+<p class="font-body-md text-body-md text-text-secondary-light mt-1">
+      Fillmate drops job details right into applications with a single tap.
+    </p>
+</div>
+<!-- 3D Clay Illustration: Phone + Inset Input + Floating Prompt -->
+<div class="relative w-full h-[184px] flex items-center justify-center my-2 select-none overflow-visible">
+<!-- Floating pastel clay background accents -->
+<div class="absolute -top-1 left-6 w-9 h-9 rounded-full bg-icon-bg-lavender shadow-[4px_4px_10px_rgba(110,90,180,0.14),-3px_-3px_8px_rgba(255,255,255,0.9),inset_2px_2px_4px_rgba(255,255,255,0.8),inset_-2px_-2px_4px_rgba(110,90,180,0.12)]"></div>
+<div class="absolute bottom-1 right-5 w-11 h-11 rounded-full bg-icon-bg-mint shadow-[5px_5px_12px_rgba(15,106,72,0.12),-3px_-3px_8px_rgba(255,255,255,0.95),inset_2px_2px_5px_rgba(255,255,255,0.8),inset_-2px_-2px_5px_rgba(15,106,72,0.08)]"></div>
+<div class="absolute top-10 right-8 w-5 h-5 rounded-full bg-icon-bg-peach shadow-[3px_3px_8px_rgba(180,100,50,0.15),-2px_-2px_6px_rgba(255,255,255,0.9)]"></div>
+<!-- Clay Smartphone Base Frame -->
+<div class="relative w-[230px] h-[166px] rounded-[30px] bg-gradient-to-b from-[#FFFFFF] to-[#FAF8FF] p-3 flex flex-col justify-start items-center shadow-[14px_14px_28px_rgba(110,90,180,0.18),-8px_-8px_20px_rgba(255,255,255,0.95),inset_3px_3px_6px_rgba(255,255,255,0.9),inset_-3px_-3px_7px_rgba(110,90,180,0.08)]">
+<!-- Top Speaker / Camera Pill Dot -->
+<div class="w-10 h-1.5 rounded-full bg-outline-variant/60 mb-3 shadow-[inset_1px_1px_2px_rgba(110,90,180,0.2),inset_-1px_-1px_2px_rgba(255,255,255,0.8)]"></div>
+<!-- Recessed Clay Mock Field Inside Phone -->
+<div class="w-full flex flex-col px-1">
+<span class="font-caption-sm text-caption-sm text-text-secondary-light mb-1 px-1 font-semibold">Full Name</span>
+<div class="w-full h-10 rounded-[14px] bg-canvas-light px-3 flex items-center justify-between shadow-[inset_3px_3px_6px_rgba(110,90,180,0.16),inset_-3px_-3px_6px_rgba(255,255,255,0.85)]">
+<span class="font-body-md text-body-md text-text-placeholder text-sm">Tap to fill</span>
+<div class="w-0.5 h-4 bg-primary animate-pulse rounded-full"></div>
+</div>
+</div>
+<!-- Floating Inflated Clay Suggestion Chip / Popup -->
+<div class="absolute -bottom-3 left-4 right-4 h-12 rounded-[20px] bg-gradient-to-b from-[#FFFFFF] to-[#FAF8FF] px-3.5 flex items-center justify-between shadow-[10px_10px_22px_rgba(110,90,180,0.22),-6px_-6px_14px_rgba(255,255,255,0.95),inset_3px_3px_5px_rgba(255,255,255,0.95),inset_-3px_-3px_5px_rgba(110,90,180,0.10)] transform translate-y-1">
+<div class="flex items-center space-x-2 min-w-0">
+<!-- Spark icon pod -->
+<div class="w-7 h-7 rounded-full bg-icon-bg-lavender flex items-center justify-center shrink-0 shadow-[2px_2px_4px_rgba(110,90,180,0.15),inset_1px_1px_2px_rgba(255,255,255,0.9)]">
+<span class="material-symbols-outlined text-primary text-[16px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div class="flex flex-col truncate">
+<span class="font-label-md text-label-md text-text-primary-light font-bold truncate">Aarav Mehta</span>
+</div>
+</div>
+<span class="font-caption-sm text-caption-sm px-2 py-0.5 rounded-full bg-primary/10 text-primary font-bold">Auto</span>
+</div>
+</div>
+</div>
+<!-- Numbered Step Guidance Card -->
+<div class="w-full mt-4 rounded-[28px] bg-gradient-to-b from-[#FFFFFF] to-[#FAF8FF] p-5 shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.9),inset_4px_4px_8px_rgba(255,255,255,0.8),inset_-4px_-4px_8px_rgba(110,90,180,0.10)] flex flex-col space-y-4">
+<!-- Step 1 -->
+<div class="flex items-start space-x-3.5 relative">
+<div class="w-8 h-8 rounded-full bg-primary shrink-0 flex items-center justify-center text-white font-title-md text-[14px] shadow-[0_3px_6px_rgba(88,69,203,0.35),inset_0_2px_4px_rgba(255,255,255,0.6)] z-10">
+        1
+      </div>
+<!-- Step 1 to 2 connector line -->
+<div class="absolute left-4 top-8 w-[2px] h-6 bg-surface-variant/80 -translate-x-1/2"></div>
+<div class="flex-1 pt-1">
+<p class="font-body-md text-body-md text-text-primary-light font-semibold">
+          Tap Open settings below
+        </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start space-x-3.5 relative">
+<div class="w-8 h-8 rounded-full bg-primary shrink-0 flex items-center justify-center text-white font-title-md text-[14px] shadow-[0_3px_6px_rgba(88,69,203,0.35),inset_0_2px_4px_rgba(255,255,255,0.6)] z-10">
+        2
+      </div>
+<!-- Step 2 to 3 connector line -->
+<div class="absolute left-4 top-8 w-[2px] h-6 bg-surface-variant/80 -translate-x-1/2"></div>
+<div class="flex-1 pt-1">
+<p class="font-body-md text-body-md text-text-primary-light font-semibold">
+          Choose Fillmate as your autofill service
+        </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start space-x-3.5">
+<div class="w-8 h-8 rounded-full bg-primary shrink-0 flex items-center justify-center text-white font-title-md text-[14px] shadow-[0_3px_6px_rgba(88,69,203,0.35),inset_0_2px_4px_rgba(255,255,255,0.6)] z-10">
+        3
+      </div>
+<div class="flex-1 pt-1">
+<p class="font-body-md text-body-md text-text-primary-light font-semibold">
+          Come back here
+        </p>
+</div>
+</div>
+</div>
+<!-- Soft Butter Status Card -->
+<div class="w-full mt-3 rounded-[24px] bg-gradient-to-b from-[#FFFBF0] to-[#FFF6D8] p-3.5 px-4.5 flex items-center space-x-3 shadow-[8px_8px_18px_rgba(180,140,50,0.12),-6px_-6px_14px_rgba(255,255,255,0.9),inset_3px_3px_6px_rgba(255,255,255,0.9),inset_-3px_-3px_6px_rgba(180,140,50,0.06)]">
+<!-- Hourglass Pod -->
+<div class="w-9 h-9 rounded-full bg-tag-gap-bg flex items-center justify-center shrink-0 shadow-[2px_2px_6px_rgba(122,83,0,0.12),inset_1.5px_1.5px_3px_rgba(255,255,255,0.85)]">
+<span class="material-symbols-outlined text-tag-gap-text text-[20px]" style="font-variation-settings: 'FILL' 1;">hourglass_top</span>
+</div>
+<!-- Status Text -->
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-tag-gap-text font-bold">
+        Not enabled yet
+      </span>
+<span class="font-caption-sm text-caption-sm text-tag-gap-text/80">
+        Waiting for system permission
+      </span>
+</div>
+</div>
+<!-- Pinned Bottom Actions -->
+<div class="w-full flex flex-col space-y-2 mt-5">
+<!-- Primary Pill Button -->
+<button class="w-full h-14 rounded-full bg-primary text-white font-title-md text-[17px] font-bold flex items-center justify-center space-x-2 shadow-[10px_10px_20px_rgba(88,69,203,0.32),-6px_-6px_14px_rgba(255,255,255,0.9),inset_0_2px_4px_rgba(255,255,255,0.6)] active:scale-[0.98] transition-transform" type="button">
+<span>Open Android settings</span>
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+<!-- Secondary Text Button -->
+<button class="w-full h-11 rounded-full flex items-center justify-center font-body-md text-body-md text-secondary font-bold active:opacity-75 transition-opacity" type="button">
+      I'll do this later
+    </button>
+</div>
+</div></main></body></html>

@@ -1,0 +1,27 @@
+apply plugin: "com.android.library"
+apply plugin: "org.jetbrains.kotlin.android"
+
+android {
+    namespace "ai.fillmate.autofill"
+    compileSdk rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+        test.java.srcDirs += "src/test/kotlin"
+    }
+}
+
+// Dependencies are added WHEN a phase needs them (see .claude/build-plan.md):
+//   phase 2: Room (+ KSP), DataStore + Tink (session), OkHttp
+//   phase 3: Jetpack Compose (AI Answer sheet), androidx.activity
+dependencies {
+    // `api`, not `implementation`: the facade returns core types (ResolutionTrace), so the app sees them too.
+    api project(":autofill-core")
+    testImplementation("junit:junit:4.13.2")
+}

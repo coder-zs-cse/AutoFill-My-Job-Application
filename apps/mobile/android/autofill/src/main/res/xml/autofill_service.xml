@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  No <compatibility-package> entries: Chrome now talks to third-party autofill services
+  directly once the user picks "Autofill using another service" in Chrome settings.
+  VERIFY on the phase-1 device (see .claude/autofill-service.md, "Must verify empirically").
+-->
+<autofill-service xmlns:android="http://schemas.android.com/apk/res/android" />

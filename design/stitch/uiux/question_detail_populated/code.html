@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#5845cb", "tag-ai-text": "#5B3BB8", "tertiary-fixed-dim": "#ffb865", "on-tertiary-fixed": "#2b1700", "tag-alias-bg": "#C9F2E1", "surface-container": "#f2ebff", "on-secondary-fixed-variant": "#3f2aba", "secondary": "#5544d0", "surface-container-highest": "#e7deff", "text-primary-dark": "#F1EEFA", "primary-fixed": "#e4dfff", "tag-gap-text": "#7A5300", "inverse-primary": "#c7bfff", "on-surface": "#1d1733", "surface-tint": "#5a48ce", "error-container": "#ffdad6", "on-tertiary-container": "#fffbff", "icon-bg-lavender": "#E9E4FF", "on-error-container": "#93000a", "background": "#fdf7ff", "tertiary-fixed": "#ffddba", "tag-alias-text": "#0F6A48", "tag-skipped-text": "#5E5874", "surface-dim": "#dfd5fa", "secondary-container": "#6e60ea", "on-primary-container": "#fffbff", "on-error": "#ffffff", "tag-error-bg": "#FFD9D4", "on-tertiary-fixed-variant": "#673d00", "surface-variant": "#e7deff", "outline-variant": "#c8c4d6", "primary-fixed-dim": "#c7bfff", "icon-bg-mint": "#DDF7EC", "on-surface-variant": "#474554", "text-primary-light": "#2A2440", "on-secondary-container": "#fffbff", "surface": "#fdf7ff", "inverse-on-surface": "#f5eeff", "tag-gap-bg": "#FFEDB8", "secondary-fixed": "#e4dfff", "destructive": "#B3261E", "outline": "#787585", "primary-container": "#7160e6", "tertiary-container": "#a66600", "surface-container-high": "#ede4ff", "on-tertiary": "#ffffff", "icon-bg-peach": "#FFE8DC", "canvas-dark": "#1B1828", "surface-container-low": "#f8f1ff", "on-primary-fixed-variant": "#422bb5", "icon-bg-sky": "#E2EEFF", "tag-skipped-bg": "#ECEAF2", "error": "#ba1a1a", "tag-semantic-bg": "#D4E6FF", "on-secondary": "#ffffff", "text-secondary-light": "#6B6485", "canvas-light": "#F3F0FA", "on-primary-fixed": "#170065", "tertiary": "#845000", "on-secondary-fixed": "#160066", "surface-container-lowest": "#ffffff", "text-secondary-dark": "#B3ACCB", "on-background": "#1d1733", "tag-semantic-text": "#1C4F94", "surface-bright": "#fdf7ff", "inverse-surface": "#322c49", "tag-error-text": "#9A2A1E", "secondary-fixed-dim": "#c6bfff", "text-placeholder": "#9A93B3", "on-primary": "#ffffff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter": "12px", "space-sm": "8px", "space-md": "12px", "space-xl": "18px", "space-xs": "4px", "space-lg": "16px", "margin": "20px" }, "fontFamily": { "body-md": ["Nunito Sans"], "caption-sm": ["Nunito Sans"], "label-md": ["Nunito Sans"], "title-md": ["Nunito Sans"], "display-lg": ["Nunito Sans"] }, "fontSize": { "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "caption-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "600" }], "title-md": ["20px", { "lineHeight": "26px", "fontWeight": "700" }], "display-lg": ["28px", { "lineHeight": "34px", "fontWeight": "800" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-canvas-light text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased selection:bg-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-canvas-light/85 backdrop-blur-xl"><div class="h-16 px-margin flex items-center justify-between"><button aria-label="Go back" class="w-11 h-11 rounded-full flex items-center justify-center bg-gradient-to-b from-white to-[#FAF8FF] shadow-[6px_6px_14px_rgba(110,90,180,0.14),-4px_-4px_10px_rgba(255,255,255,0.90)] active:shadow-[inset_2px_2px_4px_rgba(110,90,180,0.15)] text-text-primary-light transition-all" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-text-primary-light tracking-tight truncate max-w-[200px] text-center flex-1 mx-space-sm">Question Detail</h1><div class="flex items-center gap-space-sm"><button aria-label="Delete question" class="w-11 h-11 rounded-full flex items-center justify-center bg-gradient-to-b from-white to-[#FAF8FF] shadow-[6px_6px_14px_rgba(110,90,180,0.14),-4px_-4px_10px_rgba(255,255,255,0.90)] active:shadow-[inset_2px_2px_4px_rgba(110,90,180,0.15)] text-destructive transition-all" type="button"><span class="material-symbols-outlined text-[20px]">delete</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[2px_2px_6px_rgba(88,69,203,0.25)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin pt-16 pb-safe bg-canvas-light"><div class="flex flex-col w-full pb-6 space-y-4">
+<!-- Card 1: Question & Meta -->
+<div class="w-full rounded-[28px] bg-gradient-to-b from-white to-[#FAF8FF] p-[18px] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.90)] [box-shadow:12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.90),inset_4px_4px_8px_rgba(255,255,255,0.80),inset_-4px_-4px_8px_rgba(110,90,180,0.10)]">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-text-secondary-light uppercase tracking-wider">Question</span>
+<span class="inline-flex items-center gap-1 font-caption-sm text-caption-sm text-tag-alias-text bg-tag-alias-bg px-2.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        Active Key
+      </span>
+</div>
+<!-- Concave Question Input Well -->
+<div class="h-14 w-full rounded-[20px] bg-canvas-light px-4 flex items-center justify-between shadow-[inset_3px_3px_6px_rgba(110,90,180,0.18),inset_-3px_-3px_6px_rgba(255,255,255,0.80)] mb-3.5">
+<span class="font-title-md text-body-md font-bold text-text-primary-light select-all">Current CTC</span>
+<span class="material-symbols-outlined text-text-placeholder text-[20px]">edit</span>
+</div>
+<!-- Metadata Controls Row -->
+<div class="flex items-center justify-between gap-2 pt-1">
+<!-- Category Dropdown Pill -->
+<button class="h-10 px-3.5 rounded-full bg-gradient-to-b from-white to-[#FAF8FF] flex items-center gap-2 shadow-[6px_6px_14px_rgba(110,90,180,0.14),-4px_-4px_10px_rgba(255,255,255,0.90)] active:shadow-[inset_2px_2px_4px_rgba(110,90,180,0.15)] transition-all" type="button">
+<div class="w-6 h-6 rounded-full bg-icon-bg-peach flex items-center justify-center">
+<span class="material-symbols-outlined text-[15px] text-tertiary" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+<span class="font-label-md text-label-md text-text-primary-light">Compensation</span>
+<span class="material-symbols-outlined text-[16px] text-text-secondary-light">keyboard_arrow_down</span>
+</button>
+<!-- Segmented Pill Control (Short / Long) -->
+<div class="h-10 p-1 rounded-full bg-canvas-light flex items-center shadow-[inset_2px_2px_5px_rgba(110,90,180,0.15),inset_-2px_-2px_5px_rgba(255,255,255,0.80)]">
+<button class="h-8 px-3 rounded-full bg-gradient-to-b from-white to-[#FAF8FF] font-label-md text-label-md text-primary shadow-[2px_2px_6px_rgba(110,90,180,0.18),-2px_-2px_4px_rgba(255,255,255,0.95)]" type="button">
+          Short
+        </button>
+<button class="h-8 px-3 rounded-full font-label-md text-label-md text-text-secondary-light" type="button">
+          Long
+        </button>
+</div>
+</div>
+</div>
+<!-- Card 2: Answer -->
+<div class="w-full rounded-[28px] bg-gradient-to-b from-white to-[#FAF8FF] p-[18px] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.90)] [box-shadow:12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.90),inset_4px_4px_8px_rgba(255,255,255,0.80),inset_-4px_-4px_8px_rgba(110,90,180,0.10)]">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-text-secondary-light">Answer template</span>
+<span class="font-caption-sm text-caption-sm text-primary flex items-center gap-1 cursor-pointer">
+<span class="material-symbols-outlined text-[15px]">auto_fix_high</span>
+        Smart format
+      </span>
+</div>
+<!-- Concave Answer Well -->
+<div class="min-h-14 w-full rounded-[20px] bg-canvas-light px-4 py-3 flex items-center justify-between shadow-[inset_3px_3px_6px_rgba(110,90,180,0.18),inset_-3px_-3px_6px_rgba(255,255,255,0.80)]">
+<span class="font-body-md text-body-md text-text-primary-light font-semibold tracking-tight">18 LPA (fixed 15 + variable 3)</span>
+<button aria-label="Copy answer" class="w-8 h-8 rounded-full bg-white/70 flex items-center justify-center text-primary shadow-[2px_2px_4px_rgba(110,90,180,0.10)] active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[17px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Aliases Cloud -->
+<div class="w-full rounded-[28px] bg-gradient-to-b from-white to-[#FAF8FF] p-[18px] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.90)] [box-shadow:12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.90),inset_4px_4px_8px_rgba(255,255,255,0.80),inset_-4px_-4px_8px_rgba(110,90,180,0.10)]">
+<div class="flex items-baseline justify-between mb-1">
+<h2 class="font-title-md text-title-md text-text-primary-light font-bold">Aliases</h2>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light">5 linked</span>
+</div>
+<p class="font-caption-sm text-caption-sm text-text-secondary-light mb-3">
+      Forms that use these exact phrases get auto-filled with this answer.
+    </p>
+<!-- Clay Chip Cloud -->
+<div class="flex flex-wrap gap-2 mb-3" id="alias-cloud">
+<!-- Chip 1 -->
+<div class="h-8 pl-3 pr-2 rounded-full bg-gradient-to-b from-white to-[#FAF8FF] flex items-center gap-1.5 shadow-[4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.90)] [box-shadow:4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.90),inset_2px_2px_4px_rgba(255,255,255,0.85)]">
+<span class="font-label-md text-label-md text-text-primary-light lowercase">current ctc</span>
+<button aria-label="Remove alias" class="w-4 h-4 rounded-full flex items-center justify-center text-text-secondary-light hover:text-destructive" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Chip 2 -->
+<div class="h-8 pl-3 pr-2 rounded-full bg-gradient-to-b from-white to-[#FAF8FF] flex items-center gap-1.5 shadow-[4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.90)] [box-shadow:4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.90),inset_2px_2px_4px_rgba(255,255,255,0.85)]">
+<span class="font-label-md text-label-md text-text-primary-light lowercase">present salary</span>
+<button aria-label="Remove alias" class="w-4 h-4 rounded-full flex items-center justify-center text-text-secondary-light hover:text-destructive" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Chip 3 -->
+<div class="h-8 pl-3 pr-2 rounded-full bg-gradient-to-b from-white to-[#FAF8FF] flex items-center gap-1.5 shadow-[4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.90)] [box-shadow:4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.90),inset_2px_2px_4px_rgba(255,255,255,0.85)]">
+<span class="font-label-md text-label-md text-text-primary-light lowercase">current salary</span>
+<button aria-label="Remove alias" class="w-4 h-4 rounded-full flex items-center justify-center text-text-secondary-light hover:text-destructive" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Chip 4 -->
+<div class="h-8 pl-3 pr-2 rounded-full bg-gradient-to-b from-white to-[#FAF8FF] flex items-center gap-1.5 shadow-[4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.90)] [box-shadow:4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.90),inset_2px_2px_4px_rgba(255,255,255,0.85)]">
+<span class="font-label-md text-label-md text-text-primary-light lowercase">ctc (current)</span>
+<button aria-label="Remove alias" class="w-4 h-4 rounded-full flex items-center justify-center text-text-secondary-light hover:text-destructive" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Chip 5 -->
+<div class="h-8 pl-3 pr-2 rounded-full bg-gradient-to-b from-white to-[#FAF8FF] flex items-center gap-1.5 shadow-[4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.90)] [box-shadow:4px_4px_10px_rgba(110,90,180,0.12),-3px_-3px_8px_rgba(255,255,255,0.90),inset_2px_2px_4px_rgba(255,255,255,0.85)]">
+<span class="font-label-md text-label-md text-text-primary-light lowercase">existing ctc</span>
+<button aria-label="Remove alias" class="w-4 h-4 rounded-full flex items-center justify-center text-text-secondary-light hover:text-destructive" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Add Alias Action Pill -->
+<button class="h-8 px-3.5 rounded-full bg-primary-fixed/50 hover:bg-primary-fixed text-primary flex items-center gap-1 font-label-md text-label-md shadow-[3px_3px_8px_rgba(110,90,180,0.10),-2px_-2px_6px_rgba(255,255,255,0.90)] active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add alias</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 text-text-secondary-light">
+<span class="material-symbols-outlined text-[14px]">touch_app</span>
+<span class="font-caption-sm text-caption-sm">Tap an alias to see how it performs in live autofills</span>
+</div>
+</div>
+<!-- Card 4: Sky-tinted Guardrail Info Card -->
+<div class="w-full rounded-[28px] bg-gradient-to-b from-[#EBF3FF] to-[#F3F8FF] p-4 flex items-center gap-3.5 shadow-[10px_10px_20px_rgba(28,79,148,0.12),-6px_-6px_16px_rgba(255,255,255,0.95)] [box-shadow:10px_10px_20px_rgba(28,79,148,0.12),-6px_-6px_16px_rgba(255,255,255,0.95),inset_3px_3px_6px_rgba(255,255,255,0.9),inset_-3px_-3px_6px_rgba(28,79,148,0.06)]">
+<!-- Sky Pill Icon Pod -->
+<div class="w-10 h-10 shrink-0 rounded-full bg-tag-semantic-bg flex items-center justify-center shadow-[3px_3px_7px_rgba(28,79,148,0.18),-2px_-2px_6px_rgba(255,255,255,0.9)]">
+<span class="material-symbols-outlined text-tag-semantic-text text-[20px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+<p class="font-label-md text-label-md text-tag-semantic-text leading-snug">
+      Labels with <span class="font-bold underline decoration-tag-semantic-text/40">expected</span> or <span class="font-bold underline decoration-tag-semantic-text/40">previous</span> will never match these aliases.
+    </p>
+</div>
+<!-- Card 5: Performance Insights -->
+<div class="w-full rounded-[28px] bg-gradient-to-b from-white to-[#FAF8FF] p-[18px] shadow-[12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.90)] [box-shadow:12px_12px_24px_rgba(110,90,180,0.18),-8px_-8px_18px_rgba(255,255,255,0.90),inset_4px_4px_8px_rgba(255,255,255,0.80),inset_-4px_-4px_8px_rgba(110,90,180,0.10)]">
+<div class="flex items-center justify-between mb-3.5">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-icon-bg-lavender flex items-center justify-center">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">insights</span>
+</div>
+<h3 class="font-title-md text-body-md font-bold text-text-primary-light">Performance Insights</h3>
+</div>
+<span class="font-caption-sm text-caption-sm text-tag-alias-text bg-icon-bg-mint px-2 py-0.5 rounded-full font-semibold">92% accuracy</span>
+</div>
+<!-- 4-Stat Bento Grid -->
+<div class="grid grid-cols-4 gap-2">
+<!-- Stat 1 -->
+<div class="rounded-[20px] bg-canvas-light p-2.5 flex flex-col items-center justify-center text-center shadow-[inset_2px_2px_5px_rgba(110,90,180,0.12),inset_-2px_-2px_5px_rgba(255,255,255,0.80)]">
+<span class="font-title-md text-title-md font-bold text-text-primary-light">12</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light leading-none mt-1">Suggested</span>
+</div>
+<!-- Stat 2 -->
+<div class="rounded-[20px] bg-canvas-light p-2.5 flex flex-col items-center justify-center text-center shadow-[inset_2px_2px_5px_rgba(110,90,180,0.12),inset_-2px_-2px_5px_rgba(255,255,255,0.80)]">
+<span class="font-title-md text-title-md font-bold text-primary">9</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light leading-none mt-1">Chosen</span>
+</div>
+<!-- Stat 3 -->
+<div class="rounded-[20px] bg-canvas-light p-2.5 flex flex-col items-center justify-center text-center shadow-[inset_2px_2px_5px_rgba(110,90,180,0.12),inset_-2px_-2px_5px_rgba(255,255,255,0.80)]">
+<span class="font-title-md text-title-md font-bold text-tag-gap-text">4</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light leading-none mt-1">AI instead</span>
+</div>
+<!-- Stat 4 -->
+<div class="rounded-[20px] bg-canvas-light p-2.5 flex flex-col items-center justify-center text-center shadow-[inset_2px_2px_5px_rgba(110,90,180,0.12),inset_-2px_-2px_5px_rgba(255,255,255,0.80)]">
+<span class="font-label-md text-label-md font-bold text-text-primary-light mt-1">2d ago</span>
+<span class="font-caption-sm text-caption-sm text-text-secondary-light leading-none mt-1">Last used</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action Bar / Save Button -->
+<div class="pt-2 sticky bottom-4 z-20">
+<button class="w-full h-14 rounded-full bg-[#7C6CF2] text-on-primary font-title-md text-body-md font-bold flex items-center justify-center gap-2 shadow-[8px_8px_20px_rgba(110,90,180,0.35),-4px_-4px_12px_rgba(255,255,255,0.90)] [box-shadow:8px_8px_20px_rgba(110,90,180,0.35),-4px_-4px_12px_rgba(255,255,255,0.90),inset_0_3px_5px_rgba(255,255,255,0.65),inset_0_-3px_5px_rgba(60,40,140,0.3)] active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Save changes</span>
+</button>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for chip dismissal and visual tap feedback
+  document.querySelectorAll('#alias-cloud button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const chip = btn.closest('div');
+      if (chip && btn.querySelector('.material-symbols-outlined')?.textContent.trim() === 'close') {
+        chip.style.transform = 'scale(0.85)';
+        chip.style.opacity = '0';
+        chip.style.transition = 'all 0.18s ease-out';
+        setTimeout(() => chip.remove(), 180);
+      }
+    });
+  });
+</script></main></body></html>
