@@ -31,7 +31,7 @@ class Resolver(
     private val semanticTimeoutMs: Long = 800,
 ) {
     private val normalizer = LabelNormalizer(rules)
-    private val aliasMatcher = AliasMatcher()
+    private val aliasMatcher = AliasMatcher(normalizer)
     private val qualifiers = rules.qualifiers.flatMap { normalizer.normalize(it) }.toSet()
 
     fun resolve(fields: List<FieldQuery>, snapshot: KbSnapshot): Map<String, ResolutionTrace> {
