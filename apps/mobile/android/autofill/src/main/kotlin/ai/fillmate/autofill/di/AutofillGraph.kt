@@ -2,6 +2,7 @@ package ai.fillmate.autofill.di
 
 import ai.fillmate.autofill.data.cache.InMemoryKbSnapshotStore
 import ai.fillmate.autofill.data.cache.KbSnapshotStore
+import ai.fillmate.autofill.data.cache.SpikeSnapshot
 import ai.fillmate.autofill.presentation.DatasetFactory
 import ai.fillmate.autofill.service.FillRequestHandler
 import ai.fillmate.autofill.structure.LabelExtractors
@@ -22,7 +23,8 @@ class AutofillGraph private constructor(context: Context) {
     private val appContext = context.applicationContext
 
     val rules: MatchingRules by lazy { MatchingRules.loadDefault() }
-    val snapshotStore: KbSnapshotStore by lazy { InMemoryKbSnapshotStore() } // phase 2: Room
+    // Phase 1: seeded with the debug-only spike snapshot (null in release). Phase 2: Room.
+    val snapshotStore: KbSnapshotStore by lazy { InMemoryKbSnapshotStore(SpikeSnapshot.orNull()) }
     val resolver: Resolver by lazy { Resolver(rules, semanticTier = null) } // phase 3: HTTP SemanticTier
 
     val fillRequestHandler: FillRequestHandler by lazy {

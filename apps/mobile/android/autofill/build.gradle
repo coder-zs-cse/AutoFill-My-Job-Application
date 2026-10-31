@@ -11,9 +11,15 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+    buildFeatures {
+        buildConfig true // BuildConfig.DEBUG gates the spike tooling (AGP 8 turned this off by default)
+    }
     sourceSets {
         main.java.srcDirs += "src/main/kotlin"
         test.java.srcDirs += "src/test/kotlin"
+        // Variant-only code: spike seed data exists in debug; release gets an empty stub of the same class.
+        debug.java.srcDirs += "src/debug/kotlin"
+        release.java.srcDirs += "src/release/kotlin"
     }
 }
 

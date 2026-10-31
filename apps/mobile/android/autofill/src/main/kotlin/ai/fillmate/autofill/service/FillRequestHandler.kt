@@ -1,13 +1,16 @@
 package ai.fillmate.autofill.service
 
+import ai.fillmate.autofill.BuildConfig
 import ai.fillmate.autofill.data.cache.KbSnapshotStore
 import ai.fillmate.autofill.presentation.DatasetFactory
+import ai.fillmate.autofill.structure.StructureDumper
 import ai.fillmate.autofill.structure.StructureParser
 import ai.fillmate.core.model.FieldQuery
 import ai.fillmate.core.resolve.Resolver
 import android.content.Context
 import android.service.autofill.FillRequest
 import android.service.autofill.FillResponse
+import android.util.Log
 
 /**
  * Orchestrates one fill request:  parse structure -> resolve labels -> build suggestions.
@@ -21,11 +24,15 @@ class FillRequestHandler(
 ) {
     fun handle(request: FillRequest, context: Context): FillResponse? {
         val structure = request.fillContexts.lastOrNull()?.structure ?: return null
+        if (BuildConfig.DEBUG) StructureDumper.dump(structure) // phase-1 spike: before any early return
         val page = parser.parse(structure)
         if (page.fields.isEmpty()) return null
 
         val snapshot = snapshots.current() ?: return null // not synced yet: suggest nothing
         val traces = resolver.resolve(page.fields.map { FieldQuery(it.key, it.label) }, snapshot)
+        if (BuildConfig.DEBUG) {
+            page.fields.forEach { Log.d("FillmateStructure", "field '${it.label}' via ${it.labelSource} -> ${traces[it.key]?.result}") }
+        }
 
         return datasets.build(context, page, traces)
     }
