@@ -1,7 +1,9 @@
 package ai.fillmate.autofill.service
 
+import ai.fillmate.autofill.BuildConfig
 import ai.fillmate.autofill.data.cache.KbSnapshotStore
 import ai.fillmate.autofill.presentation.DatasetFactory
+import ai.fillmate.autofill.structure.StructureDumper
 import ai.fillmate.autofill.structure.StructureParser
 import ai.fillmate.core.model.FieldQuery
 import ai.fillmate.core.resolve.Resolver
@@ -21,6 +23,7 @@ class FillRequestHandler(
 ) {
     fun handle(request: FillRequest, context: Context): FillResponse? {
         val structure = request.fillContexts.lastOrNull()?.structure ?: return null
+        if (BuildConfig.DEBUG) StructureDumper.dump(structure) // phase-1 spike: before any early return
         val page = parser.parse(structure)
         if (page.fields.isEmpty()) return null
 
