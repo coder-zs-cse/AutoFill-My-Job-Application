@@ -6,6 +6,10 @@ alwaysApply: true
 Source of truth for agents is `AGENTS.md` at the repo root and the specs in `.claude/`. Read `AGENTS.md`
 and `KARPATHY.md` before making changes; read the spec named in AGENTS.md's "Read before…" table for the task.
 
+Every session: follow `AGENTS.md` → SESSION START (read docs, inspect repo/impl/deps, read
+`AI_WORK_LOG.md`, check git branch/working tree, identify stack/entry points, ask before large
+assumptions). Keep `AI_WORK_LOG.md` updated (session start entry, per-task entries, handoff).
+
 Non-negotiables:
 - Respect layer/feature boundaries (ui → application → domain ← data; features via `@features/<name>` only).
 - Stitch exports in `design/stitch/` are visual references, never code to port.

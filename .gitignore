@@ -13,3 +13,4 @@ apps/mobile/android/local.properties
 !apps/mobile/android/app/debug.keystore
 # RN
 apps/mobile/.metro-health-check*
+.idea/

@@ -54,7 +54,8 @@ Change `<site>` to `google-form`, `greenhouse`, `lever`.
 adb logcat -c
 adb logcat -v time -s FillmateStructure:D FillmateAutofill:W | tee docs/spikes/assist-structure/<site>.txt
 ```
-The file holds two kinds of lines: the full node tree, and one `field '<label>' via <Extractor> -> <result>`
+The file holds two kinds of lines: the full node tree (every public `ViewNode` property via
+reflection, plus `html.tag` / `html.attrs`), and one `field '<label>' via <Extractor> -> <result>`
 line per field the parser accepted. A `fill request failed` warning means an exception: keep it, send it.
 
 Quick check that the dump is not empty:
