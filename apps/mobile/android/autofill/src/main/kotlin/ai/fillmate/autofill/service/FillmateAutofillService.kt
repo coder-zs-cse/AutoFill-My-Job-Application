@@ -7,6 +7,7 @@ import android.service.autofill.FillCallback
 import android.service.autofill.FillRequest
 import android.service.autofill.SaveCallback
 import android.service.autofill.SaveRequest
+import android.util.Log
 import java.util.concurrent.Executors
 
 /**
@@ -24,6 +25,7 @@ class FillmateAutofillService : AutofillService() {
             try {
                 callback.onSuccess(handler.handle(request, this))
             } catch (e: Exception) {
+                Log.w("FillmateAutofill", "fill request failed", e) // spec: log, then show nothing
                 callback.onSuccess(null) // spec: unusable input shows nothing, no error UI
             }
         }

@@ -1,5 +1,7 @@
 <resources>
     <string name="fillmate_autofill_label">Fillmate</string>
+    <string name="suggestion_alias">Alias: %1$s</string>
+    <string name="suggestion_semantic">Similar saved question</string>
     <string name="suggestion_ai">AutoFill with AI</string>
     <string name="suggestion_later">Save for later</string>
 </resources>
